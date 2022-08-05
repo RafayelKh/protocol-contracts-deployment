@@ -108,7 +108,7 @@
   "sourceMap": "190:760:7:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "190:760:7:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1176:148:2;;;;;;;;;;;;;;;;-1:-1:-1;1176:148:2;-1:-1:-1;;;;;;1176:148:2;;:::i;:::-;;;;;;;;;;;;;;;;;;716:201:7;;;;;;;;;;;;;;;;-1:-1:-1;;;;;716:201:7;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;716:201:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;716:201:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;716:201:7;;;;;;;;-1:-1:-1;716:201:7;;-1:-1:-1;;;;;716:201:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;716:201:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;716:201:7;;;;;;;;-1:-1:-1;716:201:7;;-1:-1:-1;;;;;716:201:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;716:201:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;716:201:7;;-1:-1:-1;716:201:7;;-1:-1:-1;;;;;716:201:7:i;:::-;;;;-1:-1:-1;;;;;;716:201:7;;;;;;;;;;;;;;537:173;;;;;;;;;;;;;;;;-1:-1:-1;;;;;537:173:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;537:173:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;537:173:7;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;537:173:7;;-1:-1:-1;537:173:7;;-1:-1:-1;;;;;537:173:7:i;1176:148:2:-;-1:-1:-1;;;;;;1284:33:2;1261:4;1284:33;;;:20;:33;;;;;;;;;1176:148::o;716:201:7:-;-1:-1:-1;;;716:201:7;;;;;;;:::o;537:173::-;-1:-1:-1;;;537:173:7;;;;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.0 <0.8.0;\n\nimport \"./ERC1155ReceiverUpgradeable.sol\";\nimport \"../../proxy/Initializable.sol\";\n\n/**\n * @dev _Available since v3.1._\n */\ncontract ERC1155HolderUpgradeable is Initializable, ERC1155ReceiverUpgradeable {\n    function __ERC1155Holder_init() internal initializer {\n        __ERC165_init_unchained();\n        __ERC1155Receiver_init_unchained();\n        __ERC1155Holder_init_unchained();\n    }\n\n    function __ERC1155Holder_init_unchained() internal initializer {\n    }\n    function onERC1155Received(address, address, uint256, uint256, bytes memory) public virtual override returns (bytes4) {\n        return this.onERC1155Received.selector;\n    }\n\n    function onERC1155BatchReceived(address, address, uint256[] memory, uint256[] memory, bytes memory) public virtual override returns (bytes4) {\n        return this.onERC1155BatchReceived.selector;\n    }\n    uint256[50] private __gap;\n}\n",
-  "sourcePath": "@openzeppelin/contracts-upgradeable/token/ERC1155/ERC1155HolderUpgradeable.sol",
+  "sourcePath": "@openzeppelin\\contracts-upgradeable\\token\\ERC1155\\ERC1155HolderUpgradeable.sol",
   "ast": {
     "absolutePath": "@openzeppelin/contracts-upgradeable/token/ERC1155/ERC1155HolderUpgradeable.sol",
     "exportedSymbols": {
@@ -2054,8 +2054,8 @@
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.5",
-  "updatedAt": "2022-07-27T15:42:37.899Z",
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-08-05T17:11:10.362Z",
   "devdoc": {
     "details": "_Available since v3.1._",
     "kind": "dev",

@@ -62,7 +62,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"bytes4\",\"name\":\"assetClass\",\"type\":\"bytes4\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct LibAsset.AssetType\",\"name\":\"leftAssetType\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"bytes4\",\"name\":\"assetClass\",\"type\":\"bytes4\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct LibAsset.AssetType\",\"name\":\"rightAssetType\",\"type\":\"tuple\"}],\"name\":\"matchAssets\",\"outputs\":[{\"components\":[{\"internalType\":\"bytes4\",\"name\":\"assetClass\",\"type\":\"bytes4\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct LibAsset.AssetType\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/exchange-interfaces/contracts/IAssetMatcher.sol\":\"IAssetMatcher\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@rarible/exchange-interfaces/contracts/IAssetMatcher.sol\":{\"keccak256\":\"0x6c4459012ce46db960cfdcc5067c49392aa650e6d78e0702acc7ad9173b061b0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cf05f7d8655dea90b54c9ec8d24c1e0cd9205c6f9ab9d0ff98cce01ab3988a9e\",\"dweb:/ipfs/QmTKeDUTXYD98M6heQtHwEZUP9A48pFWgU5YzMSLEvDpRq\"]},\"@rarible/lib-asset/contracts/LibAsset.sol\":{\"keccak256\":\"0x5d63bba4747a12a83c5628dba94bf56714b4dcf94f742ff28863034831061c8a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9826768c7f5c5423d9bbf49be50bd21ed2db5374ee47648150e50aa10e3c0151\",\"dweb:/ipfs/Qmex4xCv4MFRfCxMNZzzsKXYAFxbYWQRFsbaHiJfDTozYG\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"components\":[{\"internalType\":\"bytes4\",\"name\":\"assetClass\",\"type\":\"bytes4\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct LibAsset.AssetType\",\"name\":\"leftAssetType\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"bytes4\",\"name\":\"assetClass\",\"type\":\"bytes4\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct LibAsset.AssetType\",\"name\":\"rightAssetType\",\"type\":\"tuple\"}],\"name\":\"matchAssets\",\"outputs\":[{\"components\":[{\"internalType\":\"bytes4\",\"name\":\"assetClass\",\"type\":\"bytes4\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"internalType\":\"struct LibAsset.AssetType\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/exchange-interfaces/contracts/IAssetMatcher.sol\":\"IAssetMatcher\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@rarible/exchange-interfaces/contracts/IAssetMatcher.sol\":{\"keccak256\":\"0x8a22d869aa8b7016af7998eee2bbc731dd1f2e9567d30664e122cca8977cae6b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://96ec842d043de64c15980768c46e76749017c0d9aaa18518a195cc4f0eb704c1\",\"dweb:/ipfs/QmT47SYH5WX4mrndZa6Pq2TGLNCSHJoCv7nJy2jdK96wQS\"]},\"@rarible/lib-asset/contracts/LibAsset.sol\":{\"keccak256\":\"0x807c7f847e26b1e616147b0ca597b0d8ed547bac4977dda2885be725e1906140\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8478b9a453a5083e09e7af9debef28132f6f404f5b3bdcf6c9122d3730bdf1e5\",\"dweb:/ipfs/QmQVfBEsMnHbB71FaevSpVq1MC1VTaP1kh3YDbRTiREYUn\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -70,8 +70,8 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.7.6;\npragma abicoder v2;\n\nimport \"@rarible/lib-asset/contracts/LibAsset.sol\";\n\ninterface IAssetMatcher {\n    function matchAssets(\n        LibAsset.AssetType memory leftAssetType,\n        LibAsset.AssetType memory rightAssetType\n    ) external view returns (LibAsset.AssetType memory);\n}\n",
-  "sourcePath": "@rarible/exchange-interfaces/contracts/IAssetMatcher.sol",
+  "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity 0.7.6;\r\npragma abicoder v2;\r\n\r\nimport \"@rarible/lib-asset/contracts/LibAsset.sol\";\r\n\r\ninterface IAssetMatcher {\r\n    function matchAssets(\r\n        LibAsset.AssetType memory leftAssetType,\r\n        LibAsset.AssetType memory rightAssetType\r\n    ) external view returns (LibAsset.AssetType memory);\r\n}\r\n",
+  "sourcePath": "@rarible\\exchange-interfaces\\contracts\\IAssetMatcher.sol",
   "ast": {
     "absolutePath": "@rarible/exchange-interfaces/contracts/IAssetMatcher.sol",
     "exportedSymbols": {
@@ -79,7 +79,7 @@
         7467
       ],
       "LibAsset": [
-        11511
+        11503
       ]
     },
     "id": 7468,
@@ -94,7 +94,7 @@
           ".6"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:44"
+        "src": "35:22:44"
       },
       {
         "id": 7456,
@@ -103,7 +103,7 @@
           "v2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "56:19:44"
+        "src": "59:19:44"
       },
       {
         "absolutePath": "@rarible/lib-asset/contracts/LibAsset.sol",
@@ -111,8 +111,8 @@
         "id": 7457,
         "nodeType": "ImportDirective",
         "scope": 7468,
-        "sourceUnit": 11512,
-        "src": "77:51:44",
+        "sourceUnit": 11504,
+        "src": "82:51:44",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -148,21 +148,21 @@
                   "name": "leftAssetType",
                   "nodeType": "VariableDeclaration",
                   "scope": 7466,
-                  "src": "190:39:44",
+                  "src": "199:39:44",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_AssetType_$11463_memory_ptr",
+                    "typeIdentifier": "t_struct$_AssetType_$11455_memory_ptr",
                     "typeString": "struct LibAsset.AssetType"
                   },
                   "typeName": {
                     "id": 7458,
                     "name": "LibAsset.AssetType",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 11463,
-                    "src": "190:18:44",
+                    "referencedDeclaration": 11455,
+                    "src": "199:18:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_AssetType_$11463_storage_ptr",
+                      "typeIdentifier": "t_struct$_AssetType_$11455_storage_ptr",
                       "typeString": "struct LibAsset.AssetType"
                     }
                   },
@@ -175,28 +175,28 @@
                   "name": "rightAssetType",
                   "nodeType": "VariableDeclaration",
                   "scope": 7466,
-                  "src": "239:40:44",
+                  "src": "249:40:44",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_AssetType_$11463_memory_ptr",
+                    "typeIdentifier": "t_struct$_AssetType_$11455_memory_ptr",
                     "typeString": "struct LibAsset.AssetType"
                   },
                   "typeName": {
                     "id": 7460,
                     "name": "LibAsset.AssetType",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 11463,
-                    "src": "239:18:44",
+                    "referencedDeclaration": 11455,
+                    "src": "249:18:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_AssetType_$11463_storage_ptr",
+                      "typeIdentifier": "t_struct$_AssetType_$11455_storage_ptr",
                       "typeString": "struct LibAsset.AssetType"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "180:105:44"
+              "src": "188:108:44"
             },
             "returnParameters": {
               "id": 7465,
@@ -209,41 +209,41 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 7466,
-                  "src": "309:25:44",
+                  "src": "320:25:44",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_AssetType_$11463_memory_ptr",
+                    "typeIdentifier": "t_struct$_AssetType_$11455_memory_ptr",
                     "typeString": "struct LibAsset.AssetType"
                   },
                   "typeName": {
                     "id": 7463,
                     "name": "LibAsset.AssetType",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 11463,
-                    "src": "309:18:44",
+                    "referencedDeclaration": 11455,
+                    "src": "320:18:44",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_AssetType_$11463_storage_ptr",
+                      "typeIdentifier": "t_struct$_AssetType_$11455_storage_ptr",
                       "typeString": "struct LibAsset.AssetType"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "308:27:44"
+              "src": "319:27:44"
             },
             "scope": 7467,
-            "src": "160:176:44",
+            "src": "168:179:44",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
         "scope": 7468,
-        "src": "130:208:44"
+        "src": "137:213:44"
       }
     ],
-    "src": "33:306:44"
+    "src": "35:317:44"
   },
   "legacyAST": {
     "attributes": {
@@ -253,7 +253,7 @@
           7467
         ],
         "LibAsset": [
-          11511
+          11503
         ]
       },
       "license": "MIT"
@@ -269,7 +269,7 @@
         },
         "id": 7455,
         "name": "PragmaDirective",
-        "src": "33:22:44"
+        "src": "35:22:44"
       },
       {
         "attributes": {
@@ -280,11 +280,11 @@
         },
         "id": 7456,
         "name": "PragmaDirective",
-        "src": "56:19:44"
+        "src": "59:19:44"
       },
       {
         "attributes": {
-          "SourceUnit": 11512,
+          "SourceUnit": 11504,
           "absolutePath": "@rarible/lib-asset/contracts/LibAsset.sol",
           "file": "@rarible/lib-asset/contracts/LibAsset.sol",
           "scope": 7468,
@@ -295,7 +295,7 @@
         },
         "id": 7457,
         "name": "ImportDirective",
-        "src": "77:51:44"
+        "src": "82:51:44"
       },
       {
         "attributes": {
@@ -348,17 +348,17 @@
                       {
                         "attributes": {
                           "name": "LibAsset.AssetType",
-                          "referencedDeclaration": 11463,
+                          "referencedDeclaration": 11455,
                           "type": "struct LibAsset.AssetType"
                         },
                         "id": 7458,
                         "name": "UserDefinedTypeName",
-                        "src": "190:18:44"
+                        "src": "199:18:44"
                       }
                     ],
                     "id": 7459,
                     "name": "VariableDeclaration",
-                    "src": "190:39:44"
+                    "src": "199:39:44"
                   },
                   {
                     "attributes": {
@@ -375,22 +375,22 @@
                       {
                         "attributes": {
                           "name": "LibAsset.AssetType",
-                          "referencedDeclaration": 11463,
+                          "referencedDeclaration": 11455,
                           "type": "struct LibAsset.AssetType"
                         },
                         "id": 7460,
                         "name": "UserDefinedTypeName",
-                        "src": "239:18:44"
+                        "src": "249:18:44"
                       }
                     ],
                     "id": 7461,
                     "name": "VariableDeclaration",
-                    "src": "239:40:44"
+                    "src": "249:40:44"
                   }
                 ],
                 "id": 7462,
                 "name": "ParameterList",
-                "src": "180:105:44"
+                "src": "188:108:44"
               },
               {
                 "children": [
@@ -409,45 +409,45 @@
                       {
                         "attributes": {
                           "name": "LibAsset.AssetType",
-                          "referencedDeclaration": 11463,
+                          "referencedDeclaration": 11455,
                           "type": "struct LibAsset.AssetType"
                         },
                         "id": 7463,
                         "name": "UserDefinedTypeName",
-                        "src": "309:18:44"
+                        "src": "320:18:44"
                       }
                     ],
                     "id": 7464,
                     "name": "VariableDeclaration",
-                    "src": "309:25:44"
+                    "src": "320:25:44"
                   }
                 ],
                 "id": 7465,
                 "name": "ParameterList",
-                "src": "308:27:44"
+                "src": "319:27:44"
               }
             ],
             "id": 7466,
             "name": "FunctionDefinition",
-            "src": "160:176:44"
+            "src": "168:179:44"
           }
         ],
         "id": 7467,
         "name": "ContractDefinition",
-        "src": "130:208:44"
+        "src": "137:213:44"
       }
     ],
     "id": 7468,
     "name": "SourceUnit",
-    "src": "33:306:44"
+    "src": "35:317:44"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.5",
-  "updatedAt": "2022-07-27T15:42:38.033Z",
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-08-05T17:11:10.532Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

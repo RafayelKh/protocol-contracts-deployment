@@ -36,7 +36,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"getRoyaltyData\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"artistAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"additionalPayee\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"additionalPayeePercentage\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"royaltyFeeByID\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/royalties-registry/contracts/providers/RoyaltyArtBlocks.sol\":\"RoyaltyArtBlocks\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@rarible/lib-part/contracts/LibPart.sol\":{\"keccak256\":\"0xd0123f7411573a6a7e1527e0d3901913d7642e504ff240d5b7c5b76a28587def\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://447b449f7f986ecfdea10cbc96ae276877102866353b4f8410fec0bdb357d5ae\",\"dweb:/ipfs/QmatbYwMc1UXCGGH1D9fvgLbLPNdgzBVafYW84B1nJJiRr\"]},\"@rarible/royalties-registry/contracts/providers/RoyaltyArtBlocks.sol\":{\"keccak256\":\"0x20f324b7f1e82961efd2c491ab3e4f477b203dab51e0f8918d272003f0d37149\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e068205b3b45cf32cc685c93e171627b9a6c549b33591c0d3185418f0385d718\",\"dweb:/ipfs/QmSm6FfPbRVtVxhXwcJTXFBRfimn2RDUvQ2o9ZdwFanmuY\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"getRoyaltyData\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"artistAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"additionalPayee\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"additionalPayeePercentage\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"royaltyFeeByID\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/royalties-registry/contracts/providers/RoyaltyArtBlocks.sol\":\"RoyaltyArtBlocks\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@rarible/lib-part/contracts/LibPart.sol\":{\"keccak256\":\"0x1df0a6d9b769ed63f977d56ac76ac8d1eac435c4256054beb8c67c96486514af\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fa9b69331714414839affded93b9d8e6c2368621b729db6f0de59b36d62cf744\",\"dweb:/ipfs/QmeH2YpMNs9C6CB8GugZkWnPTaQJAT3TS6NB4yBDwJcYTc\"]},\"@rarible/royalties-registry/contracts/providers/RoyaltyArtBlocks.sol\":{\"keccak256\":\"0x9c06bdc84481fdba3e49a439a7c6c16eb8dbe4305993073c2af4c4cd93982d10\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6dfba2d2f2146b93df7d07e70ee6f8f0a13ac89b0252766b7a34e1e59b70cc05\",\"dweb:/ipfs/QmaXXmyhBS2BSK8Atrn8ukvr3iwc46FsV5cCQr58tYhnZf\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -44,24 +44,24 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.2 <0.8.0;\npragma abicoder v2;\n\nimport \"@rarible/lib-part/contracts/LibPart.sol\";\n\nabstract contract RoyaltyArtBlocks {\n    \n    function getRoyaltyData(uint256 _tokenId) external virtual view returns (address artistAddress, address additionalPayee, uint256 additionalPayeePercentage, uint256 royaltyFeeByID);\n\n}\n",
-  "sourcePath": "@rarible/royalties-registry/contracts/providers/RoyaltyArtBlocks.sol",
+  "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity >=0.6.2 <0.8.0;\r\npragma abicoder v2;\r\n\r\nimport \"@rarible/lib-part/contracts/LibPart.sol\";\r\n\r\nabstract contract RoyaltyArtBlocks {\r\n    \r\n    function getRoyaltyData(uint256 _tokenId) external virtual view returns (address artistAddress, address additionalPayee, uint256 additionalPayeePercentage, uint256 royaltyFeeByID);\r\n\r\n}\r\n",
+  "sourcePath": "@rarible\\royalties-registry\\contracts\\providers\\RoyaltyArtBlocks.sol",
   "ast": {
     "absolutePath": "@rarible/royalties-registry/contracts/providers/RoyaltyArtBlocks.sol",
     "exportedSymbols": {
       "LibPart": [
-        11568
+        11560
       ],
       "RoyaltyArtBlocks": [
-        13430
+        13422
       ]
     },
-    "id": 13431,
+    "id": 13423,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 13414,
+        "id": 13406,
         "literals": [
           "solidity",
           ">=",
@@ -72,25 +72,25 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:31:81"
+        "src": "35:31:81"
       },
       {
-        "id": 13415,
+        "id": 13407,
         "literals": [
           "abicoder",
           "v2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "65:19:81"
+        "src": "68:19:81"
       },
       {
         "absolutePath": "@rarible/lib-part/contracts/LibPart.sol",
         "file": "@rarible/lib-part/contracts/LibPart.sol",
-        "id": 13416,
+        "id": 13408,
         "nodeType": "ImportDirective",
-        "scope": 13431,
-        "sourceUnit": 11569,
-        "src": "86:49:81",
+        "scope": 13423,
+        "sourceUnit": 11561,
+        "src": "91:49:81",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -100,33 +100,33 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": false,
-        "id": 13430,
+        "id": 13422,
         "linearizedBaseContracts": [
-          13430
+          13422
         ],
         "name": "RoyaltyArtBlocks",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "functionSelector": "a65ff74c",
-            "id": 13429,
+            "id": 13421,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getRoyaltyData",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 13419,
+              "id": 13411,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 13418,
+                  "id": 13410,
                   "mutability": "mutable",
                   "name": "_tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 13429,
-                  "src": "207:16:81",
+                  "scope": 13421,
+                  "src": "216:16:81",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -134,10 +134,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 13417,
+                    "id": 13409,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "207:7:81",
+                    "src": "216:7:81",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -146,20 +146,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "206:18:81"
+              "src": "215:18:81"
             },
             "returnParameters": {
-              "id": 13428,
+              "id": 13420,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 13421,
+                  "id": 13413,
                   "mutability": "mutable",
                   "name": "artistAddress",
                   "nodeType": "VariableDeclaration",
-                  "scope": 13429,
-                  "src": "256:21:81",
+                  "scope": 13421,
+                  "src": "265:21:81",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -167,10 +167,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 13420,
+                    "id": 13412,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "256:7:81",
+                    "src": "265:7:81",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -181,12 +181,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 13423,
+                  "id": 13415,
                   "mutability": "mutable",
                   "name": "additionalPayee",
                   "nodeType": "VariableDeclaration",
-                  "scope": 13429,
-                  "src": "279:23:81",
+                  "scope": 13421,
+                  "src": "288:23:81",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -194,10 +194,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 13422,
+                    "id": 13414,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "279:7:81",
+                    "src": "288:7:81",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -208,12 +208,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 13425,
+                  "id": 13417,
                   "mutability": "mutable",
                   "name": "additionalPayeePercentage",
                   "nodeType": "VariableDeclaration",
-                  "scope": 13429,
-                  "src": "304:33:81",
+                  "scope": 13421,
+                  "src": "313:33:81",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -221,10 +221,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 13424,
+                    "id": 13416,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "304:7:81",
+                    "src": "313:7:81",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -234,12 +234,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 13427,
+                  "id": 13419,
                   "mutability": "mutable",
                   "name": "royaltyFeeByID",
                   "nodeType": "VariableDeclaration",
-                  "scope": 13429,
-                  "src": "339:22:81",
+                  "scope": 13421,
+                  "src": "348:22:81",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -247,10 +247,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 13426,
+                    "id": 13418,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "339:7:81",
+                    "src": "348:7:81",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -259,30 +259,30 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "255:107:81"
+              "src": "264:107:81"
             },
-            "scope": 13430,
-            "src": "183:180:81",
+            "scope": 13422,
+            "src": "192:180:81",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "external"
           }
         ],
-        "scope": 13431,
-        "src": "137:229:81"
+        "scope": 13423,
+        "src": "144:233:81"
       }
     ],
-    "src": "33:334:81"
+    "src": "35:344:81"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "@rarible/royalties-registry/contracts/providers/RoyaltyArtBlocks.sol",
       "exportedSymbols": {
         "LibPart": [
-          11568
+          11560
         ],
         "RoyaltyArtBlocks": [
-          13430
+          13422
         ]
       },
       "license": "MIT"
@@ -300,9 +300,9 @@
             ".0"
           ]
         },
-        "id": 13414,
+        "id": 13406,
         "name": "PragmaDirective",
-        "src": "33:31:81"
+        "src": "35:31:81"
       },
       {
         "attributes": {
@@ -311,24 +311,24 @@
             "v2"
           ]
         },
-        "id": 13415,
+        "id": 13407,
         "name": "PragmaDirective",
-        "src": "65:19:81"
+        "src": "68:19:81"
       },
       {
         "attributes": {
-          "SourceUnit": 11569,
+          "SourceUnit": 11561,
           "absolutePath": "@rarible/lib-part/contracts/LibPart.sol",
           "file": "@rarible/lib-part/contracts/LibPart.sol",
-          "scope": 13431,
+          "scope": 13423,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 13416,
+        "id": 13408,
         "name": "ImportDirective",
-        "src": "86:49:81"
+        "src": "91:49:81"
       },
       {
         "attributes": {
@@ -342,10 +342,10 @@
           "contractKind": "contract",
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            13430
+            13422
           ],
           "name": "RoyaltyArtBlocks",
-          "scope": 13431
+          "scope": 13423
         },
         "children": [
           {
@@ -358,7 +358,7 @@
                 null
               ],
               "name": "getRoyaltyData",
-              "scope": 13430,
+              "scope": 13422,
               "stateMutability": "view",
               "virtual": true,
               "visibility": "external"
@@ -371,7 +371,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "_tokenId",
-                      "scope": 13429,
+                      "scope": 13421,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -383,19 +383,19 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 13417,
+                        "id": 13409,
                         "name": "ElementaryTypeName",
-                        "src": "207:7:81"
+                        "src": "216:7:81"
                       }
                     ],
-                    "id": 13418,
+                    "id": 13410,
                     "name": "VariableDeclaration",
-                    "src": "207:16:81"
+                    "src": "216:16:81"
                   }
                 ],
-                "id": 13419,
+                "id": 13411,
                 "name": "ParameterList",
-                "src": "206:18:81"
+                "src": "215:18:81"
               },
               {
                 "children": [
@@ -404,7 +404,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "artistAddress",
-                      "scope": 13429,
+                      "scope": 13421,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -417,21 +417,21 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 13420,
+                        "id": 13412,
                         "name": "ElementaryTypeName",
-                        "src": "256:7:81"
+                        "src": "265:7:81"
                       }
                     ],
-                    "id": 13421,
+                    "id": 13413,
                     "name": "VariableDeclaration",
-                    "src": "256:21:81"
+                    "src": "265:21:81"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
                       "name": "additionalPayee",
-                      "scope": 13429,
+                      "scope": 13421,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -444,21 +444,21 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 13422,
+                        "id": 13414,
                         "name": "ElementaryTypeName",
-                        "src": "279:7:81"
+                        "src": "288:7:81"
                       }
                     ],
-                    "id": 13423,
+                    "id": 13415,
                     "name": "VariableDeclaration",
-                    "src": "279:23:81"
+                    "src": "288:23:81"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
                       "name": "additionalPayeePercentage",
-                      "scope": 13429,
+                      "scope": 13421,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -470,21 +470,21 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 13424,
+                        "id": 13416,
                         "name": "ElementaryTypeName",
-                        "src": "304:7:81"
+                        "src": "313:7:81"
                       }
                     ],
-                    "id": 13425,
+                    "id": 13417,
                     "name": "VariableDeclaration",
-                    "src": "304:33:81"
+                    "src": "313:33:81"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
                       "name": "royaltyFeeByID",
-                      "scope": 13429,
+                      "scope": 13421,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -496,42 +496,42 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 13426,
+                        "id": 13418,
                         "name": "ElementaryTypeName",
-                        "src": "339:7:81"
+                        "src": "348:7:81"
                       }
                     ],
-                    "id": 13427,
+                    "id": 13419,
                     "name": "VariableDeclaration",
-                    "src": "339:22:81"
+                    "src": "348:22:81"
                   }
                 ],
-                "id": 13428,
+                "id": 13420,
                 "name": "ParameterList",
-                "src": "255:107:81"
+                "src": "264:107:81"
               }
             ],
-            "id": 13429,
+            "id": 13421,
             "name": "FunctionDefinition",
-            "src": "183:180:81"
+            "src": "192:180:81"
           }
         ],
-        "id": 13430,
+        "id": 13422,
         "name": "ContractDefinition",
-        "src": "137:229:81"
+        "src": "144:233:81"
       }
     ],
-    "id": 13431,
+    "id": 13423,
     "name": "SourceUnit",
-    "src": "33:334:81"
+    "src": "35:344:81"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.5",
-  "updatedAt": "2022-07-27T15:42:38.149Z",
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-08-05T17:11:10.690Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

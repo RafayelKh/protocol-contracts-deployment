@@ -30,7 +30,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IERC20Upgradeable\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"erc20safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/exchange-interfaces/contracts/IERC20TransferProxy.sol\":\"IERC20TransferProxy\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol\":{\"keccak256\":\"0xa1931c47a617014f858580db625aa0dcf343796f39acd4b5b51effc092a1f0a9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2cbeb499bad52667b96dd7df8e9b1f583e8c07afaba0018a75e5b7ff6e777173\",\"dweb:/ipfs/QmPLJnuhEcWnpmhMHKsiuVHVxMwb5k6idYyjajbrtZLz5B\"]},\"@rarible/exchange-interfaces/contracts/IERC20TransferProxy.sol\":{\"keccak256\":\"0x5cc1d6300618f13724624bbdd1b4447d1f149dc7cc3b75497e03110f798d9547\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://330001e598d2648c07a4e4c0276ed4822a24533dd6f5ad288738d8bee3c86404\",\"dweb:/ipfs/QmddZvc39hJ9nm2jvnxbjjj8v95XWnn8G4CEzuFxzWCHH6\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IERC20Upgradeable\",\"name\":\"token\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"erc20safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/exchange-interfaces/contracts/IERC20TransferProxy.sol\":\"IERC20TransferProxy\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol\":{\"keccak256\":\"0xa1931c47a617014f858580db625aa0dcf343796f39acd4b5b51effc092a1f0a9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2cbeb499bad52667b96dd7df8e9b1f583e8c07afaba0018a75e5b7ff6e777173\",\"dweb:/ipfs/QmPLJnuhEcWnpmhMHKsiuVHVxMwb5k6idYyjajbrtZLz5B\"]},\"@rarible/exchange-interfaces/contracts/IERC20TransferProxy.sol\":{\"keccak256\":\"0x4414800f489be27a07695f83bcea3400f1163b9a7806b02503ae6f664b3e556a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d9155f4f0e63fae9591e70f061cbf94502902e3fe8f29ffd6921a2f909bb5366\",\"dweb:/ipfs/Qmd72zLF2WBXXf543MfXCqxPmC791XVgergE834EhwRE2w\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -38,8 +38,8 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.9 <0.8.0;\npragma abicoder v2;\n\nimport \"@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol\";\n\ninterface IERC20TransferProxy {\n    function erc20safeTransferFrom(IERC20Upgradeable token, address from, address to, uint256 value) external;\n}\n",
-  "sourcePath": "@rarible/exchange-interfaces/contracts/IERC20TransferProxy.sol",
+  "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity >=0.6.9 <0.8.0;\r\npragma abicoder v2;\r\n\r\nimport \"@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol\";\r\n\r\ninterface IERC20TransferProxy {\r\n    function erc20safeTransferFrom(IERC20Upgradeable token, address from, address to, uint256 value) external;\r\n}\r\n",
+  "sourcePath": "@rarible\\exchange-interfaces\\contracts\\IERC20TransferProxy.sol",
   "ast": {
     "absolutePath": "@rarible/exchange-interfaces/contracts/IERC20TransferProxy.sol",
     "exportedSymbols": {
@@ -66,7 +66,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:31:46"
+        "src": "35:31:46"
       },
       {
         "id": 7502,
@@ -75,7 +75,7 @@
           "v2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "65:19:46"
+        "src": "68:19:46"
       },
       {
         "absolutePath": "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol",
@@ -84,7 +84,7 @@
         "nodeType": "ImportDirective",
         "scope": 7516,
         "sourceUnit": 1262,
-        "src": "86:79:46",
+        "src": "91:79:46",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -120,7 +120,7 @@
                   "name": "token",
                   "nodeType": "VariableDeclaration",
                   "scope": 7514,
-                  "src": "234:23:46",
+                  "src": "242:23:46",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -132,7 +132,7 @@
                     "name": "IERC20Upgradeable",
                     "nodeType": "UserDefinedTypeName",
                     "referencedDeclaration": 1261,
-                    "src": "234:17:46",
+                    "src": "242:17:46",
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_IERC20Upgradeable_$1261",
                       "typeString": "contract IERC20Upgradeable"
@@ -147,7 +147,7 @@
                   "name": "from",
                   "nodeType": "VariableDeclaration",
                   "scope": 7514,
-                  "src": "259:12:46",
+                  "src": "267:12:46",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -158,7 +158,7 @@
                     "id": 7506,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "259:7:46",
+                    "src": "267:7:46",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -174,7 +174,7 @@
                   "name": "to",
                   "nodeType": "VariableDeclaration",
                   "scope": 7514,
-                  "src": "273:10:46",
+                  "src": "281:10:46",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -185,7 +185,7 @@
                     "id": 7508,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "273:7:46",
+                    "src": "281:7:46",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -201,7 +201,7 @@
                   "name": "value",
                   "nodeType": "VariableDeclaration",
                   "scope": 7514,
-                  "src": "285:13:46",
+                  "src": "293:13:46",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -212,7 +212,7 @@
                     "id": 7510,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "285:7:46",
+                    "src": "293:7:46",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -221,26 +221,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "233:66:46"
+              "src": "241:66:46"
             },
             "returnParameters": {
               "id": 7513,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "308:0:46"
+              "src": "316:0:46"
             },
             "scope": 7515,
-            "src": "203:106:46",
+            "src": "211:106:46",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
         "scope": 7516,
-        "src": "167:144:46"
+        "src": "174:146:46"
       }
     ],
-    "src": "33:279:46"
+    "src": "35:287:46"
   },
   "legacyAST": {
     "attributes": {
@@ -270,7 +270,7 @@
         },
         "id": 7501,
         "name": "PragmaDirective",
-        "src": "33:31:46"
+        "src": "35:31:46"
       },
       {
         "attributes": {
@@ -281,7 +281,7 @@
         },
         "id": 7502,
         "name": "PragmaDirective",
-        "src": "65:19:46"
+        "src": "68:19:46"
       },
       {
         "attributes": {
@@ -296,7 +296,7 @@
         },
         "id": 7503,
         "name": "ImportDirective",
-        "src": "86:79:46"
+        "src": "91:79:46"
       },
       {
         "attributes": {
@@ -354,12 +354,12 @@
                         },
                         "id": 7504,
                         "name": "UserDefinedTypeName",
-                        "src": "234:17:46"
+                        "src": "242:17:46"
                       }
                     ],
                     "id": 7505,
                     "name": "VariableDeclaration",
-                    "src": "234:23:46"
+                    "src": "242:23:46"
                   },
                   {
                     "attributes": {
@@ -381,12 +381,12 @@
                         },
                         "id": 7506,
                         "name": "ElementaryTypeName",
-                        "src": "259:7:46"
+                        "src": "267:7:46"
                       }
                     ],
                     "id": 7507,
                     "name": "VariableDeclaration",
-                    "src": "259:12:46"
+                    "src": "267:12:46"
                   },
                   {
                     "attributes": {
@@ -408,12 +408,12 @@
                         },
                         "id": 7508,
                         "name": "ElementaryTypeName",
-                        "src": "273:7:46"
+                        "src": "281:7:46"
                       }
                     ],
                     "id": 7509,
                     "name": "VariableDeclaration",
-                    "src": "273:10:46"
+                    "src": "281:10:46"
                   },
                   {
                     "attributes": {
@@ -434,17 +434,17 @@
                         },
                         "id": 7510,
                         "name": "ElementaryTypeName",
-                        "src": "285:7:46"
+                        "src": "293:7:46"
                       }
                     ],
                     "id": 7511,
                     "name": "VariableDeclaration",
-                    "src": "285:13:46"
+                    "src": "293:13:46"
                   }
                 ],
                 "id": 7512,
                 "name": "ParameterList",
-                "src": "233:66:46"
+                "src": "241:66:46"
               },
               {
                 "attributes": {
@@ -455,30 +455,30 @@
                 "children": [],
                 "id": 7513,
                 "name": "ParameterList",
-                "src": "308:0:46"
+                "src": "316:0:46"
               }
             ],
             "id": 7514,
             "name": "FunctionDefinition",
-            "src": "203:106:46"
+            "src": "211:106:46"
           }
         ],
         "id": 7515,
         "name": "ContractDefinition",
-        "src": "167:144:46"
+        "src": "174:146:46"
       }
     ],
     "id": 7516,
     "name": "SourceUnit",
-    "src": "33:279:46"
+    "src": "35:287:46"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.5",
-  "updatedAt": "2022-07-27T15:42:38.034Z",
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-08-05T17:11:10.534Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

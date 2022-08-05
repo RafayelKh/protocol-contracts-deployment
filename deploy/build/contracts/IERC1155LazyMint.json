@@ -508,7 +508,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"indexed\":false,\"internalType\":\"struct LibPart.Part[]\",\"name\":\"creators\",\"type\":\"tuple[]\"}],\"name\":\"Creators\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Supply\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"},{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"values\",\"type\":\"uint256[]\"}],\"name\":\"TransferBatch\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"TransferSingle\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"value\",\"type\":\"string\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"URI\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"accounts\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"}],\"name\":\"balanceOfBatch\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"tokenURI\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"supply\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"internalType\":\"struct LibPart.Part[]\",\"name\":\"creators\",\"type\":\"tuple[]\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"internalType\":\"struct LibPart.Part[]\",\"name\":\"royalties\",\"type\":\"tuple[]\"},{\"internalType\":\"bytes[]\",\"name\":\"signatures\",\"type\":\"bytes[]\"}],\"internalType\":\"struct LibERC1155LazyMint.Mint1155Data\",\"name\":\"data\",\"type\":\"tuple\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"mintAndTransfer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeBatchTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"tokenURI\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"supply\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"internalType\":\"struct LibPart.Part[]\",\"name\":\"creators\",\"type\":\"tuple[]\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"internalType\":\"struct LibPart.Part[]\",\"name\":\"royalties\",\"type\":\"tuple[]\"},{\"internalType\":\"bytes[]\",\"name\":\"signatures\",\"type\":\"bytes[]\"}],\"internalType\":\"struct LibERC1155LazyMint.Mint1155Data\",\"name\":\"data\",\"type\":\"tuple\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferFromOrMint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"balanceOf(address,uint256)\":{\"details\":\"Returns the amount of tokens of token type `id` owned by `account`. Requirements: - `account` cannot be the zero address.\"},\"balanceOfBatch(address[],uint256[])\":{\"details\":\"xref:ROOT:erc1155.adoc#batch-operations[Batched] version of {balanceOf}. Requirements: - `accounts` and `ids` must have the same length.\"},\"isApprovedForAll(address,address)\":{\"details\":\"Returns true if `operator` is approved to transfer ``account``'s tokens. See {setApprovalForAll}.\"},\"safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)\":{\"details\":\"xref:ROOT:erc1155.adoc#batch-operations[Batched] version of {safeTransferFrom}. Emits a {TransferBatch} event. Requirements: - `ids` and `amounts` must have the same length. - If `to` refers to a smart contract, it must implement {IERC1155Receiver-onERC1155BatchReceived} and return the acceptance magic value.\"},\"safeTransferFrom(address,address,uint256,uint256,bytes)\":{\"details\":\"Transfers `amount` tokens of token type `id` from `from` to `to`. Emits a {TransferSingle} event. Requirements: - `to` cannot be the zero address. - If the caller is not `from`, it must be have been approved to spend ``from``'s tokens via {setApprovalForAll}. - `from` must have a balance of tokens of type `id` of at least `amount`. - If `to` refers to a smart contract, it must implement {IERC1155Receiver-onERC1155Received} and return the acceptance magic value.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"Grants or revokes permission to `operator` to transfer the caller's tokens, according to `approved`, Emits an {ApprovalForAll} event. Requirements: - `operator` cannot be the caller.\"},\"supportsInterface(bytes4)\":{\"details\":\"Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/lazy-mint/contracts/erc-1155/IERC1155LazyMint.sol\":\"IERC1155LazyMint\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts-upgradeable/introspection/IERC165Upgradeable.sol\":{\"keccak256\":\"0x4784c3f8a520a739dd25d76f514833a653990902d0e21601aed45bda44c87524\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://359411cc44a4499f37d46562ef3f348db443f9a699138c1797264d20b14697b7\",\"dweb:/ipfs/QmUmeQNUwve4MFCc1ace6zMnstqa8S9SZe1nXG9THcpQ5v\"]},\"@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Upgradeable.sol\":{\"keccak256\":\"0xcbc02d192c55298cf65e5695375c839eac979a597a0fbdc1635195c4d28ca5ac\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://45ee9cb5a548db9a3805b934f995770272583ef6c0abd31aeffb7bd1f4c2f696\",\"dweb:/ipfs/QmcHGENdTcAzU6NuaoJWgMDA2rH1JdCWJf2EXRnSE967Qw\"]},\"@rarible/lazy-mint/contracts/erc-1155/IERC1155LazyMint.sol\":{\"keccak256\":\"0x4b532bac4a391b204a67bf25358dcc7f0bafa46202199c1b04a9d7a1cdc0e8b5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7d0f0185e29388a793ba5f1ead2ef56961ee84bf8f855526a1fff7da53a76d16\",\"dweb:/ipfs/Qme4BC9eEwwzcPZVKknrMxn4ojr7ovbjcYjA4KqCL4FYxp\"]},\"@rarible/lazy-mint/contracts/erc-1155/LibERC1155LazyMint.sol\":{\"keccak256\":\"0xd00969b4252f88ef926c1cac7abc6e20f62d590fab0312f2d6e5af98d99e3f00\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e9ecc592520b4931c2421b6e339fb365a923dc263e8106a38ef7b997bcc0d652\",\"dweb:/ipfs/QmSFvW6outFex5ohGysSg9DojKKouFqJYRV6kya6qqPKX3\"]},\"@rarible/lib-part/contracts/LibPart.sol\":{\"keccak256\":\"0xd0123f7411573a6a7e1527e0d3901913d7642e504ff240d5b7c5b76a28587def\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://447b449f7f986ecfdea10cbc96ae276877102866353b4f8410fec0bdb357d5ae\",\"dweb:/ipfs/QmatbYwMc1UXCGGH1D9fvgLbLPNdgzBVafYW84B1nJJiRr\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"indexed\":false,\"internalType\":\"struct LibPart.Part[]\",\"name\":\"creators\",\"type\":\"tuple[]\"}],\"name\":\"Creators\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"Supply\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"},{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"values\",\"type\":\"uint256[]\"}],\"name\":\"TransferBatch\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"TransferSingle\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"value\",\"type\":\"string\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"URI\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"accounts\",\"type\":\"address[]\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"}],\"name\":\"balanceOfBatch\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"tokenURI\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"supply\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"internalType\":\"struct LibPart.Part[]\",\"name\":\"creators\",\"type\":\"tuple[]\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"internalType\":\"struct LibPart.Part[]\",\"name\":\"royalties\",\"type\":\"tuple[]\"},{\"internalType\":\"bytes[]\",\"name\":\"signatures\",\"type\":\"bytes[]\"}],\"internalType\":\"struct LibERC1155LazyMint.Mint1155Data\",\"name\":\"data\",\"type\":\"tuple\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"mintAndTransfer\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"ids\",\"type\":\"uint256[]\"},{\"internalType\":\"uint256[]\",\"name\":\"amounts\",\"type\":\"uint256[]\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeBatchTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"tokenURI\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"supply\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"internalType\":\"struct LibPart.Part[]\",\"name\":\"creators\",\"type\":\"tuple[]\"},{\"components\":[{\"internalType\":\"address payable\",\"name\":\"account\",\"type\":\"address\"},{\"internalType\":\"uint96\",\"name\":\"value\",\"type\":\"uint96\"}],\"internalType\":\"struct LibPart.Part[]\",\"name\":\"royalties\",\"type\":\"tuple[]\"},{\"internalType\":\"bytes[]\",\"name\":\"signatures\",\"type\":\"bytes[]\"}],\"internalType\":\"struct LibERC1155LazyMint.Mint1155Data\",\"name\":\"data\",\"type\":\"tuple\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"transferFromOrMint\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"balanceOf(address,uint256)\":{\"details\":\"Returns the amount of tokens of token type `id` owned by `account`. Requirements: - `account` cannot be the zero address.\"},\"balanceOfBatch(address[],uint256[])\":{\"details\":\"xref:ROOT:erc1155.adoc#batch-operations[Batched] version of {balanceOf}. Requirements: - `accounts` and `ids` must have the same length.\"},\"isApprovedForAll(address,address)\":{\"details\":\"Returns true if `operator` is approved to transfer ``account``'s tokens. See {setApprovalForAll}.\"},\"safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)\":{\"details\":\"xref:ROOT:erc1155.adoc#batch-operations[Batched] version of {safeTransferFrom}. Emits a {TransferBatch} event. Requirements: - `ids` and `amounts` must have the same length. - If `to` refers to a smart contract, it must implement {IERC1155Receiver-onERC1155BatchReceived} and return the acceptance magic value.\"},\"safeTransferFrom(address,address,uint256,uint256,bytes)\":{\"details\":\"Transfers `amount` tokens of token type `id` from `from` to `to`. Emits a {TransferSingle} event. Requirements: - `to` cannot be the zero address. - If the caller is not `from`, it must be have been approved to spend ``from``'s tokens via {setApprovalForAll}. - `from` must have a balance of tokens of type `id` of at least `amount`. - If `to` refers to a smart contract, it must implement {IERC1155Receiver-onERC1155Received} and return the acceptance magic value.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"Grants or revokes permission to `operator` to transfer the caller's tokens, according to `approved`, Emits an {ApprovalForAll} event. Requirements: - `operator` cannot be the caller.\"},\"supportsInterface(bytes4)\":{\"details\":\"Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/lazy-mint/contracts/erc-1155/IERC1155LazyMint.sol\":\"IERC1155LazyMint\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts-upgradeable/introspection/IERC165Upgradeable.sol\":{\"keccak256\":\"0x4784c3f8a520a739dd25d76f514833a653990902d0e21601aed45bda44c87524\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://359411cc44a4499f37d46562ef3f348db443f9a699138c1797264d20b14697b7\",\"dweb:/ipfs/QmUmeQNUwve4MFCc1ace6zMnstqa8S9SZe1nXG9THcpQ5v\"]},\"@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Upgradeable.sol\":{\"keccak256\":\"0xcbc02d192c55298cf65e5695375c839eac979a597a0fbdc1635195c4d28ca5ac\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://45ee9cb5a548db9a3805b934f995770272583ef6c0abd31aeffb7bd1f4c2f696\",\"dweb:/ipfs/QmcHGENdTcAzU6NuaoJWgMDA2rH1JdCWJf2EXRnSE967Qw\"]},\"@rarible/lazy-mint/contracts/erc-1155/IERC1155LazyMint.sol\":{\"keccak256\":\"0xdd1fc9ea562310623fae5476524866bce5fde5ae9cda4d4692d48e8cf5dc2804\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b68e2d5c3c13a8ef798b16a173e9edc58e1eae448985663733f4796278656884\",\"dweb:/ipfs/QmSunmXNBhS9QLpRPVUTueovpumMN6yETWARqzXhRTj6qa\"]},\"@rarible/lazy-mint/contracts/erc-1155/LibERC1155LazyMint.sol\":{\"keccak256\":\"0x6e00c652b5af8d30452e28e21caf02124c8adc9ed634ca7211efac3f8a276cc3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df994c7da9c733490d321140892713fbee1f7197848fadd65177a28cb930634\",\"dweb:/ipfs/QmX8cdcB5sUYoMsdh4BcvYgb6tJVMbnXhgqr7WD2wE8FHT\"]},\"@rarible/lib-part/contracts/LibPart.sol\":{\"keccak256\":\"0x1df0a6d9b769ed63f977d56ac76ac8d1eac435c4256054beb8c67c96486514af\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fa9b69331714414839affded93b9d8e6c2368621b729db6f0de59b36d62cf744\",\"dweb:/ipfs/QmeH2YpMNs9C6CB8GugZkWnPTaQJAT3TS6NB4yBDwJcYTc\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -516,13 +516,13 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.2 <0.8.0;\npragma abicoder v2;\n\nimport \"@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Upgradeable.sol\";\nimport \"./LibERC1155LazyMint.sol\";\nimport \"@rarible/lib-part/contracts/LibPart.sol\";\n\ninterface IERC1155LazyMint is IERC1155Upgradeable {\n\n    event Supply(\n        uint256 tokenId,\n        uint256 value\n    );\n    event Creators(\n        uint256 tokenId,\n        LibPart.Part[] creators\n    );\n\n    function mintAndTransfer(\n        LibERC1155LazyMint.Mint1155Data memory data,\n        address to,\n        uint256 _amount\n    ) external;\n\n    function transferFromOrMint(\n        LibERC1155LazyMint.Mint1155Data memory data,\n        address from,\n        address to,\n        uint256 amount\n    ) external;\n}\n",
-  "sourcePath": "@rarible/lazy-mint/contracts/erc-1155/IERC1155LazyMint.sol",
+  "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity >=0.6.2 <0.8.0;\r\npragma abicoder v2;\r\n\r\nimport \"@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Upgradeable.sol\";\r\nimport \"./LibERC1155LazyMint.sol\";\r\nimport \"@rarible/lib-part/contracts/LibPart.sol\";\r\n\r\ninterface IERC1155LazyMint is IERC1155Upgradeable {\r\n\r\n    event Supply(\r\n        uint256 tokenId,\r\n        uint256 value\r\n    );\r\n    event Creators(\r\n        uint256 tokenId,\r\n        LibPart.Part[] creators\r\n    );\r\n\r\n    function mintAndTransfer(\r\n        LibERC1155LazyMint.Mint1155Data memory data,\r\n        address to,\r\n        uint256 _amount\r\n    ) external;\r\n\r\n    function transferFromOrMint(\r\n        LibERC1155LazyMint.Mint1155Data memory data,\r\n        address from,\r\n        address to,\r\n        uint256 amount\r\n    ) external;\r\n}\r\n",
+  "sourcePath": "@rarible\\lazy-mint\\contracts\\erc-1155\\IERC1155LazyMint.sol",
   "ast": {
     "absolutePath": "@rarible/lazy-mint/contracts/erc-1155/IERC1155LazyMint.sol",
     "exportedSymbols": {
       "IERC1155LazyMint": [
-        11066
+        11058
       ],
       "IERC1155Upgradeable": [
         1183
@@ -531,18 +531,18 @@
         377
       ],
       "LibERC1155LazyMint": [
-        11218
+        11210
       ],
       "LibPart": [
-        11568
+        11560
       ]
     },
-    "id": 11067,
+    "id": 11059,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 11026,
+        "id": 11018,
         "literals": [
           "solidity",
           ">=",
@@ -553,47 +553,47 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:31:66"
+        "src": "35:31:66"
       },
       {
-        "id": 11027,
+        "id": 11019,
         "literals": [
           "abicoder",
           "v2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "65:19:66"
+        "src": "68:19:66"
       },
       {
         "absolutePath": "@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Upgradeable.sol",
         "file": "@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Upgradeable.sol",
-        "id": 11028,
+        "id": 11020,
         "nodeType": "ImportDirective",
-        "scope": 11067,
+        "scope": 11059,
         "sourceUnit": 1184,
-        "src": "86:83:66",
+        "src": "91:83:66",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "@rarible/lazy-mint/contracts/erc-1155/LibERC1155LazyMint.sol",
         "file": "./LibERC1155LazyMint.sol",
-        "id": 11029,
+        "id": 11021,
         "nodeType": "ImportDirective",
-        "scope": 11067,
-        "sourceUnit": 11219,
-        "src": "170:34:66",
+        "scope": 11059,
+        "sourceUnit": 11211,
+        "src": "176:34:66",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "@rarible/lib-part/contracts/LibPart.sol",
         "file": "@rarible/lib-part/contracts/LibPart.sol",
-        "id": 11030,
+        "id": 11022,
         "nodeType": "ImportDirective",
-        "scope": 11067,
-        "sourceUnit": 11569,
-        "src": "205:49:66",
+        "scope": 11059,
+        "sourceUnit": 11561,
+        "src": "212:49:66",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -602,19 +602,19 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 11031,
+              "id": 11023,
               "name": "IERC1155Upgradeable",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 1183,
-              "src": "286:19:66",
+              "src": "295:19:66",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_IERC1155Upgradeable_$1183",
                 "typeString": "contract IERC1155Upgradeable"
               }
             },
-            "id": 11032,
+            "id": 11024,
             "nodeType": "InheritanceSpecifier",
-            "src": "286:19:66"
+            "src": "295:19:66"
           }
         ],
         "contractDependencies": [
@@ -623,9 +623,9 @@
         ],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 11066,
+        "id": 11058,
         "linearizedBaseContracts": [
-          11066,
+          11058,
           1183,
           377
         ],
@@ -634,22 +634,22 @@
         "nodes": [
           {
             "anonymous": false,
-            "id": 11038,
+            "id": 11030,
             "name": "Supply",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 11037,
+              "id": 11029,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11034,
+                  "id": 11026,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11038,
-                  "src": "335:15:66",
+                  "scope": 11030,
+                  "src": "347:15:66",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -657,10 +657,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11033,
+                    "id": 11025,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "335:7:66",
+                    "src": "347:7:66",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -670,13 +670,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 11036,
+                  "id": 11028,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "value",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11038,
-                  "src": "360:13:66",
+                  "scope": 11030,
+                  "src": "373:13:66",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -684,10 +684,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11035,
+                    "id": 11027,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "360:7:66",
+                    "src": "373:7:66",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -696,28 +696,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "325:54:66"
+              "src": "336:57:66"
             },
-            "src": "313:67:66"
+            "src": "324:70:66"
           },
           {
             "anonymous": false,
-            "id": 11045,
+            "id": 11037,
             "name": "Creators",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 11044,
+              "id": 11036,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11040,
+                  "id": 11032,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11045,
-                  "src": "409:15:66",
+                  "scope": 11037,
+                  "src": "425:15:66",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -725,13 +725,121 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11039,
+                    "id": 11031,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "409:7:66",
+                    "src": "425:7:66",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11035,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "creators",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11037,
+                  "src": "451:23:66",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_Part_$11540_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct LibPart.Part[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 11033,
+                      "name": "LibPart.Part",
+                      "nodeType": "UserDefinedTypeName",
+                      "referencedDeclaration": 11540,
+                      "src": "451:12:66",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Part_$11540_storage_ptr",
+                        "typeString": "struct LibPart.Part"
+                      }
+                    },
+                    "id": 11034,
+                    "nodeType": "ArrayTypeName",
+                    "src": "451:14:66",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_Part_$11540_storage_$dyn_storage_ptr",
+                      "typeString": "struct LibPart.Part[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "414:67:66"
+            },
+            "src": "400:82:66"
+          },
+          {
+            "functionSelector": "0eaead67",
+            "id": 11046,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "mintAndTransfer",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11044,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11039,
+                  "mutability": "mutable",
+                  "name": "data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11046,
+                  "src": "525:43:66",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_Mint1155Data_$11088_memory_ptr",
+                    "typeString": "struct LibERC1155LazyMint.Mint1155Data"
+                  },
+                  "typeName": {
+                    "id": 11038,
+                    "name": "LibERC1155LazyMint.Mint1155Data",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11088,
+                    "src": "525:31:66",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Mint1155Data_$11088_storage_ptr",
+                      "typeString": "struct LibERC1155LazyMint.Mint1155Data"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 11041,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11046,
+                  "src": "579:10:66",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11040,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "579:7:66",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
                     }
                   },
                   "visibility": "internal"
@@ -739,119 +847,11 @@
                 {
                   "constant": false,
                   "id": 11043,
-                  "indexed": false,
-                  "mutability": "mutable",
-                  "name": "creators",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 11045,
-                  "src": "434:23:66",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Part_$11548_memory_ptr_$dyn_memory_ptr",
-                    "typeString": "struct LibPart.Part[]"
-                  },
-                  "typeName": {
-                    "baseType": {
-                      "id": 11041,
-                      "name": "LibPart.Part",
-                      "nodeType": "UserDefinedTypeName",
-                      "referencedDeclaration": 11548,
-                      "src": "434:12:66",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Part_$11548_storage_ptr",
-                        "typeString": "struct LibPart.Part"
-                      }
-                    },
-                    "id": 11042,
-                    "nodeType": "ArrayTypeName",
-                    "src": "434:14:66",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Part_$11548_storage_$dyn_storage_ptr",
-                      "typeString": "struct LibPart.Part[]"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "399:64:66"
-            },
-            "src": "385:79:66"
-          },
-          {
-            "functionSelector": "0eaead67",
-            "id": 11054,
-            "implemented": false,
-            "kind": "function",
-            "modifiers": [],
-            "name": "mintAndTransfer",
-            "nodeType": "FunctionDefinition",
-            "parameters": {
-              "id": 11052,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 11047,
-                  "mutability": "mutable",
-                  "name": "data",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 11054,
-                  "src": "504:43:66",
-                  "stateVariable": false,
-                  "storageLocation": "memory",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Mint1155Data_$11096_memory_ptr",
-                    "typeString": "struct LibERC1155LazyMint.Mint1155Data"
-                  },
-                  "typeName": {
-                    "id": 11046,
-                    "name": "LibERC1155LazyMint.Mint1155Data",
-                    "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 11096,
-                    "src": "504:31:66",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Mint1155Data_$11096_storage_ptr",
-                      "typeString": "struct LibERC1155LazyMint.Mint1155Data"
-                    }
-                  },
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 11049,
-                  "mutability": "mutable",
-                  "name": "to",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 11054,
-                  "src": "557:10:66",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_address",
-                    "typeString": "address"
-                  },
-                  "typeName": {
-                    "id": 11048,
-                    "name": "address",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "557:7:66",
-                    "stateMutability": "nonpayable",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_address",
-                      "typeString": "address"
-                    }
-                  },
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
-                  "id": 11051,
                   "mutability": "mutable",
                   "name": "_amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11054,
-                  "src": "577:15:66",
+                  "scope": 11046,
+                  "src": "600:15:66",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -859,10 +859,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11050,
+                    "id": 11042,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "577:7:66",
+                    "src": "600:7:66",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -871,54 +871,54 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "494:104:66"
+              "src": "514:108:66"
             },
             "returnParameters": {
-              "id": 11053,
+              "id": 11045,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "607:0:66"
+              "src": "631:0:66"
             },
-            "scope": 11066,
-            "src": "470:138:66",
+            "scope": 11058,
+            "src": "490:142:66",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "ffc4e0a7",
-            "id": 11065,
+            "id": 11057,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "transferFromOrMint",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 11063,
+              "id": 11055,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 11056,
+                  "id": 11048,
                   "mutability": "mutable",
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11065,
-                  "src": "651:43:66",
+                  "scope": 11057,
+                  "src": "678:43:66",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Mint1155Data_$11096_memory_ptr",
+                    "typeIdentifier": "t_struct$_Mint1155Data_$11088_memory_ptr",
                     "typeString": "struct LibERC1155LazyMint.Mint1155Data"
                   },
                   "typeName": {
-                    "id": 11055,
+                    "id": 11047,
                     "name": "LibERC1155LazyMint.Mint1155Data",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 11096,
-                    "src": "651:31:66",
+                    "referencedDeclaration": 11088,
+                    "src": "678:31:66",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Mint1155Data_$11096_storage_ptr",
+                      "typeIdentifier": "t_struct$_Mint1155Data_$11088_storage_ptr",
                       "typeString": "struct LibERC1155LazyMint.Mint1155Data"
                     }
                   },
@@ -926,12 +926,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 11058,
+                  "id": 11050,
                   "mutability": "mutable",
                   "name": "from",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11065,
-                  "src": "704:12:66",
+                  "scope": 11057,
+                  "src": "732:12:66",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -939,10 +939,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 11057,
+                    "id": 11049,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "704:7:66",
+                    "src": "732:7:66",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -953,12 +953,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 11060,
+                  "id": 11052,
                   "mutability": "mutable",
                   "name": "to",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11065,
-                  "src": "726:10:66",
+                  "scope": 11057,
+                  "src": "755:10:66",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -966,10 +966,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 11059,
+                    "id": 11051,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "726:7:66",
+                    "src": "755:7:66",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -980,12 +980,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 11062,
+                  "id": 11054,
                   "mutability": "mutable",
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 11065,
-                  "src": "746:14:66",
+                  "scope": 11057,
+                  "src": "776:14:66",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -993,10 +993,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 11061,
+                    "id": 11053,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "746:7:66",
+                    "src": "776:7:66",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1005,33 +1005,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "641:125:66"
+              "src": "667:130:66"
             },
             "returnParameters": {
-              "id": 11064,
+              "id": 11056,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "775:0:66"
+              "src": "806:0:66"
             },
-            "scope": 11066,
-            "src": "614:162:66",
+            "scope": 11058,
+            "src": "640:167:66",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 11067,
-        "src": "256:522:66"
+        "scope": 11059,
+        "src": "265:545:66"
       }
     ],
-    "src": "33:746:66"
+    "src": "35:777:66"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "@rarible/lazy-mint/contracts/erc-1155/IERC1155LazyMint.sol",
       "exportedSymbols": {
         "IERC1155LazyMint": [
-          11066
+          11058
         ],
         "IERC1155Upgradeable": [
           1183
@@ -1040,10 +1040,10 @@
           377
         ],
         "LibERC1155LazyMint": [
-          11218
+          11210
         ],
         "LibPart": [
-          11568
+          11560
         ]
       },
       "license": "MIT"
@@ -1061,9 +1061,9 @@
             ".0"
           ]
         },
-        "id": 11026,
+        "id": 11018,
         "name": "PragmaDirective",
-        "src": "33:31:66"
+        "src": "35:31:66"
       },
       {
         "attributes": {
@@ -1072,54 +1072,54 @@
             "v2"
           ]
         },
-        "id": 11027,
+        "id": 11019,
         "name": "PragmaDirective",
-        "src": "65:19:66"
+        "src": "68:19:66"
       },
       {
         "attributes": {
           "SourceUnit": 1184,
           "absolutePath": "@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Upgradeable.sol",
           "file": "@openzeppelin/contracts-upgradeable/token/ERC1155/IERC1155Upgradeable.sol",
-          "scope": 11067,
+          "scope": 11059,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 11028,
+        "id": 11020,
         "name": "ImportDirective",
-        "src": "86:83:66"
+        "src": "91:83:66"
       },
       {
         "attributes": {
-          "SourceUnit": 11219,
+          "SourceUnit": 11211,
           "absolutePath": "@rarible/lazy-mint/contracts/erc-1155/LibERC1155LazyMint.sol",
           "file": "./LibERC1155LazyMint.sol",
-          "scope": 11067,
+          "scope": 11059,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 11029,
+        "id": 11021,
         "name": "ImportDirective",
-        "src": "170:34:66"
+        "src": "176:34:66"
       },
       {
         "attributes": {
-          "SourceUnit": 11569,
+          "SourceUnit": 11561,
           "absolutePath": "@rarible/lib-part/contracts/LibPart.sol",
           "file": "@rarible/lib-part/contracts/LibPart.sol",
-          "scope": 11067,
+          "scope": 11059,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 11030,
+        "id": 11022,
         "name": "ImportDirective",
-        "src": "205:49:66"
+        "src": "212:49:66"
       },
       {
         "attributes": {
@@ -1131,12 +1131,12 @@
           "contractKind": "interface",
           "fullyImplemented": false,
           "linearizedBaseContracts": [
-            11066,
+            11058,
             1183,
             377
           ],
           "name": "IERC1155LazyMint",
-          "scope": 11067
+          "scope": 11059
         },
         "children": [
           {
@@ -1148,14 +1148,14 @@
                   "referencedDeclaration": 1183,
                   "type": "contract IERC1155Upgradeable"
                 },
-                "id": 11031,
+                "id": 11023,
                 "name": "UserDefinedTypeName",
-                "src": "286:19:66"
+                "src": "295:19:66"
               }
             ],
-            "id": 11032,
+            "id": 11024,
             "name": "InheritanceSpecifier",
-            "src": "286:19:66"
+            "src": "295:19:66"
           },
           {
             "attributes": {
@@ -1171,7 +1171,7 @@
                       "indexed": false,
                       "mutability": "mutable",
                       "name": "tokenId",
-                      "scope": 11038,
+                      "scope": 11030,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1183,14 +1183,14 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 11033,
+                        "id": 11025,
                         "name": "ElementaryTypeName",
-                        "src": "335:7:66"
+                        "src": "347:7:66"
                       }
                     ],
-                    "id": 11034,
+                    "id": 11026,
                     "name": "VariableDeclaration",
-                    "src": "335:15:66"
+                    "src": "347:15:66"
                   },
                   {
                     "attributes": {
@@ -1198,7 +1198,7 @@
                       "indexed": false,
                       "mutability": "mutable",
                       "name": "value",
-                      "scope": 11038,
+                      "scope": 11030,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1210,24 +1210,24 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 11035,
+                        "id": 11027,
                         "name": "ElementaryTypeName",
-                        "src": "360:7:66"
+                        "src": "373:7:66"
                       }
                     ],
-                    "id": 11036,
+                    "id": 11028,
                     "name": "VariableDeclaration",
-                    "src": "360:13:66"
+                    "src": "373:13:66"
                   }
                 ],
-                "id": 11037,
+                "id": 11029,
                 "name": "ParameterList",
-                "src": "325:54:66"
+                "src": "336:57:66"
               }
             ],
-            "id": 11038,
+            "id": 11030,
             "name": "EventDefinition",
-            "src": "313:67:66"
+            "src": "324:70:66"
           },
           {
             "attributes": {
@@ -1243,7 +1243,7 @@
                       "indexed": false,
                       "mutability": "mutable",
                       "name": "tokenId",
-                      "scope": 11045,
+                      "scope": 11037,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1255,14 +1255,14 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 11039,
+                        "id": 11031,
                         "name": "ElementaryTypeName",
-                        "src": "409:7:66"
+                        "src": "425:7:66"
                       }
                     ],
-                    "id": 11040,
+                    "id": 11032,
                     "name": "VariableDeclaration",
-                    "src": "409:15:66"
+                    "src": "425:15:66"
                   },
                   {
                     "attributes": {
@@ -1270,7 +1270,7 @@
                       "indexed": false,
                       "mutability": "mutable",
                       "name": "creators",
-                      "scope": 11045,
+                      "scope": 11037,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "struct LibPart.Part[]",
@@ -1285,32 +1285,32 @@
                           {
                             "attributes": {
                               "name": "LibPart.Part",
-                              "referencedDeclaration": 11548,
+                              "referencedDeclaration": 11540,
                               "type": "struct LibPart.Part"
                             },
-                            "id": 11041,
+                            "id": 11033,
                             "name": "UserDefinedTypeName",
-                            "src": "434:12:66"
+                            "src": "451:12:66"
                           }
                         ],
-                        "id": 11042,
+                        "id": 11034,
                         "name": "ArrayTypeName",
-                        "src": "434:14:66"
+                        "src": "451:14:66"
                       }
                     ],
-                    "id": 11043,
+                    "id": 11035,
                     "name": "VariableDeclaration",
-                    "src": "434:23:66"
+                    "src": "451:23:66"
                   }
                 ],
-                "id": 11044,
+                "id": 11036,
                 "name": "ParameterList",
-                "src": "399:64:66"
+                "src": "414:67:66"
               }
             ],
-            "id": 11045,
+            "id": 11037,
             "name": "EventDefinition",
-            "src": "385:79:66"
+            "src": "400:82:66"
           },
           {
             "attributes": {
@@ -1322,7 +1322,7 @@
                 null
               ],
               "name": "mintAndTransfer",
-              "scope": 11066,
+              "scope": 11058,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -1335,7 +1335,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "data",
-                      "scope": 11054,
+                      "scope": 11046,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "struct LibERC1155LazyMint.Mint1155Data",
@@ -1345,24 +1345,24 @@
                       {
                         "attributes": {
                           "name": "LibERC1155LazyMint.Mint1155Data",
-                          "referencedDeclaration": 11096,
+                          "referencedDeclaration": 11088,
                           "type": "struct LibERC1155LazyMint.Mint1155Data"
                         },
-                        "id": 11046,
+                        "id": 11038,
                         "name": "UserDefinedTypeName",
-                        "src": "504:31:66"
+                        "src": "525:31:66"
                       }
                     ],
-                    "id": 11047,
+                    "id": 11039,
                     "name": "VariableDeclaration",
-                    "src": "504:43:66"
+                    "src": "525:43:66"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
                       "name": "to",
-                      "scope": 11054,
+                      "scope": 11046,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -1375,21 +1375,21 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 11048,
+                        "id": 11040,
                         "name": "ElementaryTypeName",
-                        "src": "557:7:66"
+                        "src": "579:7:66"
                       }
                     ],
-                    "id": 11049,
+                    "id": 11041,
                     "name": "VariableDeclaration",
-                    "src": "557:10:66"
+                    "src": "579:10:66"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
                       "name": "_amount",
-                      "scope": 11054,
+                      "scope": 11046,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1401,19 +1401,19 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 11050,
+                        "id": 11042,
                         "name": "ElementaryTypeName",
-                        "src": "577:7:66"
+                        "src": "600:7:66"
                       }
                     ],
-                    "id": 11051,
+                    "id": 11043,
                     "name": "VariableDeclaration",
-                    "src": "577:15:66"
+                    "src": "600:15:66"
                   }
                 ],
-                "id": 11052,
+                "id": 11044,
                 "name": "ParameterList",
-                "src": "494:104:66"
+                "src": "514:108:66"
               },
               {
                 "attributes": {
@@ -1422,14 +1422,14 @@
                   ]
                 },
                 "children": [],
-                "id": 11053,
+                "id": 11045,
                 "name": "ParameterList",
-                "src": "607:0:66"
+                "src": "631:0:66"
               }
             ],
-            "id": 11054,
+            "id": 11046,
             "name": "FunctionDefinition",
-            "src": "470:138:66"
+            "src": "490:142:66"
           },
           {
             "attributes": {
@@ -1441,7 +1441,7 @@
                 null
               ],
               "name": "transferFromOrMint",
-              "scope": 11066,
+              "scope": 11058,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -1454,7 +1454,7 @@
                       "constant": false,
                       "mutability": "mutable",
                       "name": "data",
-                      "scope": 11065,
+                      "scope": 11057,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "struct LibERC1155LazyMint.Mint1155Data",
@@ -1464,24 +1464,24 @@
                       {
                         "attributes": {
                           "name": "LibERC1155LazyMint.Mint1155Data",
-                          "referencedDeclaration": 11096,
+                          "referencedDeclaration": 11088,
                           "type": "struct LibERC1155LazyMint.Mint1155Data"
                         },
-                        "id": 11055,
+                        "id": 11047,
                         "name": "UserDefinedTypeName",
-                        "src": "651:31:66"
+                        "src": "678:31:66"
                       }
                     ],
-                    "id": 11056,
+                    "id": 11048,
                     "name": "VariableDeclaration",
-                    "src": "651:43:66"
+                    "src": "678:43:66"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
                       "name": "from",
-                      "scope": 11065,
+                      "scope": 11057,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -1494,21 +1494,21 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 11057,
+                        "id": 11049,
                         "name": "ElementaryTypeName",
-                        "src": "704:7:66"
+                        "src": "732:7:66"
                       }
                     ],
-                    "id": 11058,
+                    "id": 11050,
                     "name": "VariableDeclaration",
-                    "src": "704:12:66"
+                    "src": "732:12:66"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
                       "name": "to",
-                      "scope": 11065,
+                      "scope": 11057,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -1521,21 +1521,21 @@
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 11059,
+                        "id": 11051,
                         "name": "ElementaryTypeName",
-                        "src": "726:7:66"
+                        "src": "755:7:66"
                       }
                     ],
-                    "id": 11060,
+                    "id": 11052,
                     "name": "VariableDeclaration",
-                    "src": "726:10:66"
+                    "src": "755:10:66"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "mutability": "mutable",
                       "name": "amount",
-                      "scope": 11065,
+                      "scope": 11057,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -1547,19 +1547,19 @@
                           "name": "uint256",
                           "type": "uint256"
                         },
-                        "id": 11061,
+                        "id": 11053,
                         "name": "ElementaryTypeName",
-                        "src": "746:7:66"
+                        "src": "776:7:66"
                       }
                     ],
-                    "id": 11062,
+                    "id": 11054,
                     "name": "VariableDeclaration",
-                    "src": "746:14:66"
+                    "src": "776:14:66"
                   }
                 ],
-                "id": 11063,
+                "id": 11055,
                 "name": "ParameterList",
-                "src": "641:125:66"
+                "src": "667:130:66"
               },
               {
                 "attributes": {
@@ -1568,32 +1568,32 @@
                   ]
                 },
                 "children": [],
-                "id": 11064,
+                "id": 11056,
                 "name": "ParameterList",
-                "src": "775:0:66"
+                "src": "806:0:66"
               }
             ],
-            "id": 11065,
+            "id": 11057,
             "name": "FunctionDefinition",
-            "src": "614:162:66"
+            "src": "640:167:66"
           }
         ],
-        "id": 11066,
+        "id": 11058,
         "name": "ContractDefinition",
-        "src": "256:522:66"
+        "src": "265:545:66"
       }
     ],
-    "id": 11067,
+    "id": 11059,
     "name": "SourceUnit",
-    "src": "33:746:66"
+    "src": "35:777:66"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.5",
-  "updatedAt": "2022-07-27T15:42:38.111Z",
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-08-05T17:11:10.636Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

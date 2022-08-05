@@ -45,7 +45,7 @@
   "sourceMap": "399:602:13:-:0;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "399:602:13:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;806:162;;;;;;;;;;;;;;;;-1:-1:-1;;;;;806:162:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;806:162:13;;-1:-1:-1;806:162:13;;-1:-1:-1;;;;;806:162:13:i;:::-;;;;-1:-1:-1;;;;;;806:162:13;;;;;;;;;;;;;;;-1:-1:-1;;;806:162:13;;;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.0 <0.8.0;\n\nimport \"./IERC721ReceiverUpgradeable.sol\";\nimport \"../../proxy/Initializable.sol\";\n\n  /**\n   * @dev Implementation of the {IERC721Receiver} interface.\n   *\n   * Accepts all token transfers. \n   * Make sure the contract is able to use its token with {IERC721-safeTransferFrom}, {IERC721-approve} or {IERC721-setApprovalForAll}.\n   */\ncontract ERC721HolderUpgradeable is Initializable, IERC721ReceiverUpgradeable {\n    function __ERC721Holder_init() internal initializer {\n        __ERC721Holder_init_unchained();\n    }\n\n    function __ERC721Holder_init_unchained() internal initializer {\n    }\n\n    /**\n     * @dev See {IERC721Receiver-onERC721Received}.\n     *\n     * Always returns `IERC721Receiver.onERC721Received.selector`.\n     */\n    function onERC721Received(address, address, uint256, bytes memory) public virtual override returns (bytes4) {\n        return this.onERC721Received.selector;\n    }\n    uint256[50] private __gap;\n}\n",
-  "sourcePath": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721HolderUpgradeable.sol",
+  "sourcePath": "@openzeppelin\\contracts-upgradeable\\token\\ERC721\\ERC721HolderUpgradeable.sol",
   "ast": {
     "absolutePath": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721HolderUpgradeable.sol",
     "exportedSymbols": {
@@ -1207,8 +1207,8 @@
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.5",
-  "updatedAt": "2022-07-27T15:42:37.908Z",
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-08-05T17:11:10.390Z",
   "devdoc": {
     "details": "Implementation of the {IERC721Receiver} interface. Accepts all token transfers.  Make sure the contract is able to use its token with {IERC721-safeTransferFrom}, {IERC721-approve} or {IERC721-setApprovalForAll}.",
     "kind": "dev",

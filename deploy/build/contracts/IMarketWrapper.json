@@ -119,7 +119,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"auctionId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"nftContract\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"auctionIdMatchesToken\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"auctionId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"bidAmount\",\"type\":\"uint256\"}],\"name\":\"bid\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"auctionId\",\"type\":\"uint256\"}],\"name\":\"finalize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"auctionId\",\"type\":\"uint256\"}],\"name\":\"getCurrentHighestBidder\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"auctionId\",\"type\":\"uint256\"}],\"name\":\"getMinimumBid\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"auctionId\",\"type\":\"uint256\"}],\"name\":\"isFinalized\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Anna Carroll\",\"kind\":\"dev\",\"methods\":{\"auctionIdMatchesToken(uint256,address,uint256)\":{\"details\":\"Called in PartyBid.sol in `initialize` at line 174\",\"returns\":{\"_0\":\"TRUE if the auction is valid\"}},\"bid(uint256,uint256)\":{\"details\":\"Called in PartyBid.sol in `bid` at line 259\"},\"finalize(uint256)\":{\"details\":\"Called in PartyBid.sol in `finalize` at line 289\"},\"getCurrentHighestBidder(uint256)\":{\"details\":\"Called in PartyBid.sol in `bid` at line 241\",\"returns\":{\"_0\":\"highest bidder\"}},\"getMinimumBid(uint256)\":{\"details\":\"Called in PartyBid.sol in `bid` at line 251\",\"returns\":{\"_0\":\"minimum bid amount\"}},\"isFinalized(uint256)\":{\"details\":\"Called in PartyBid.sol in `bid` at line 247and in `finalize` at line 288\",\"returns\":{\"_0\":\"TRUE if the auction has been finalized\"}}},\"title\":\"IMarketWrapper\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"auctionIdMatchesToken(uint256,address,uint256)\":{\"notice\":\"Given the auctionId, nftContract, and tokenId, check that: 1. the auction ID matches the token referred to by tokenId + nftContract 2. the auctionId refers to an *ACTIVE* auction (e.g. an auction that will accept bids) within this market contract 3. any additional validation to ensure that a PartyBid can bid on this auction (ex: if the market allows arbitrary bidding currencies, check that the auction currency is ETH) Note: This function probably should have been named \\\"isValidAuction\\\"\"},\"bid(uint256,uint256)\":{\"notice\":\"Submit bid to Market contract\"},\"finalize(uint256)\":{\"notice\":\"Finalize the results of the auction on the Market contract It is assumed  that this operation is performed once for each auction, that after it is done the auction is over and the NFT has been transferred to the auction winner.\"},\"getCurrentHighestBidder(uint256)\":{\"notice\":\"Query the current highest bidder for this auction It is assumed that there is always 1 winning highest bidder for an auction This is used to ensure that PartyBid cannot outbid itself if it is already winning\"},\"getMinimumBid(uint256)\":{\"notice\":\"Calculate the minimum next bid for this auction. PartyBid contracts always submit the minimum possible bid that will be accepted by the Market contract. usually, this is either the reserve price (if there are no bids) or a certain percentage increase above the current highest bid\"},\"isFinalized(uint256)\":{\"notice\":\"Determine whether the auction has been finalized Used to check if it is still possible to bid And to determine whether the PartyBid should finalize the auction\"}},\"notice\":\"IMarketWrapper provides a common interface for interacting with NFT auction markets. Contracts can abstract their interactions with different NFT markets using IMarketWrapper. NFT markets can become compatible with any contract using IMarketWrapper by deploying a MarketWrapper contract that implements this interface using the logic of their Market. WARNING: MarketWrapper contracts should NEVER write to storage! When implementing a MarketWrapper, exercise caution; a poorly implemented MarketWrapper contract could permanently lose access to the NFT or user funds.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/auction/contracts/wrapper/IMarketWrapper.sol\":\"IMarketWrapper\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@rarible/auction/contracts/wrapper/IMarketWrapper.sol\":{\"keccak256\":\"0xac58803a2639711656b1159af11cd106a365ac78ddea0bec41f06872189a0368\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8b23e6f82784f8270d7689408551c0435108ce71dc25dd681844c51feca7fb67\",\"dweb:/ipfs/QmPnTRPDoV8Ym28X5WKnckeDPpSARtNxDS589RSLV13A28\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"auctionId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"nftContract\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"auctionIdMatchesToken\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"auctionId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"bidAmount\",\"type\":\"uint256\"}],\"name\":\"bid\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"auctionId\",\"type\":\"uint256\"}],\"name\":\"finalize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"auctionId\",\"type\":\"uint256\"}],\"name\":\"getCurrentHighestBidder\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"auctionId\",\"type\":\"uint256\"}],\"name\":\"getMinimumBid\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"auctionId\",\"type\":\"uint256\"}],\"name\":\"isFinalized\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Anna Carroll\",\"kind\":\"dev\",\"methods\":{\"auctionIdMatchesToken(uint256,address,uint256)\":{\"details\":\"Called in PartyBid.sol in `initialize` at line 174\",\"returns\":{\"_0\":\"TRUE if the auction is valid\"}},\"bid(uint256,uint256)\":{\"details\":\"Called in PartyBid.sol in `bid` at line 259\"},\"finalize(uint256)\":{\"details\":\"Called in PartyBid.sol in `finalize` at line 289\"},\"getCurrentHighestBidder(uint256)\":{\"details\":\"Called in PartyBid.sol in `bid` at line 241\",\"returns\":{\"_0\":\"highest bidder\"}},\"getMinimumBid(uint256)\":{\"details\":\"Called in PartyBid.sol in `bid` at line 251\",\"returns\":{\"_0\":\"minimum bid amount\"}},\"isFinalized(uint256)\":{\"details\":\"Called in PartyBid.sol in `bid` at line 247and in `finalize` at line 288\",\"returns\":{\"_0\":\"TRUE if the auction has been finalized\"}}},\"title\":\"IMarketWrapper\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"auctionIdMatchesToken(uint256,address,uint256)\":{\"notice\":\"Given the auctionId, nftContract, and tokenId, check that: 1. the auction ID matches the token referred to by tokenId + nftContract 2. the auctionId refers to an *ACTIVE* auction (e.g. an auction that will accept bids) within this market contract 3. any additional validation to ensure that a PartyBid can bid on this auction (ex: if the market allows arbitrary bidding currencies, check that the auction currency is ETH) Note: This function probably should have been named \\\"isValidAuction\\\"\"},\"bid(uint256,uint256)\":{\"notice\":\"Submit bid to Market contract\"},\"finalize(uint256)\":{\"notice\":\"Finalize the results of the auction on the Market contract It is assumed  that this operation is performed once for each auction, that after it is done the auction is over and the NFT has been transferred to the auction winner.\"},\"getCurrentHighestBidder(uint256)\":{\"notice\":\"Query the current highest bidder for this auction It is assumed that there is always 1 winning highest bidder for an auction This is used to ensure that PartyBid cannot outbid itself if it is already winning\"},\"getMinimumBid(uint256)\":{\"notice\":\"Calculate the minimum next bid for this auction. PartyBid contracts always submit the minimum possible bid that will be accepted by the Market contract. usually, this is either the reserve price (if there are no bids) or a certain percentage increase above the current highest bid\"},\"isFinalized(uint256)\":{\"notice\":\"Determine whether the auction has been finalized Used to check if it is still possible to bid And to determine whether the PartyBid should finalize the auction\"}},\"notice\":\"IMarketWrapper provides a common interface for interacting with NFT auction markets. Contracts can abstract their interactions with different NFT markets using IMarketWrapper. NFT markets can become compatible with any contract using IMarketWrapper by deploying a MarketWrapper contract that implements this interface using the logic of their Market. WARNING: MarketWrapper contracts should NEVER write to storage! When implementing a MarketWrapper, exercise caution; a poorly implemented MarketWrapper contract could permanently lose access to the NFT or user funds.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/auction/contracts/wrapper/IMarketWrapper.sol\":\"IMarketWrapper\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@rarible/auction/contracts/wrapper/IMarketWrapper.sol\":{\"keccak256\":\"0x87795b2068c4a12f6b3d28a949668aebcb18046ca5679c8e31aa711f0a65bdbd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fa2e53b9e622d42321d01bbde2a2073f45f9e4de885955e1ab171c1875f7fd9c\",\"dweb:/ipfs/QmYPaXauEZ5SeoYKjNNgYngyVvuntBSAxJhVAwPbnackBW\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -127,8 +127,8 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.7.6;\n\n/**\n * @title IMarketWrapper\n * @author Anna Carroll\n * @notice IMarketWrapper provides a common interface for\n * interacting with NFT auction markets.\n * Contracts can abstract their interactions with\n * different NFT markets using IMarketWrapper.\n * NFT markets can become compatible with any contract\n * using IMarketWrapper by deploying a MarketWrapper contract\n * that implements this interface using the logic of their Market.\n *\n * WARNING: MarketWrapper contracts should NEVER write to storage!\n * When implementing a MarketWrapper, exercise caution; a poorly implemented\n * MarketWrapper contract could permanently lose access to the NFT or user funds.\n */\ninterface IMarketWrapper {\n    /**\n     * @notice Given the auctionId, nftContract, and tokenId, check that:\n     * 1. the auction ID matches the token\n     * referred to by tokenId + nftContract\n     * 2. the auctionId refers to an *ACTIVE* auction\n     * (e.g. an auction that will accept bids)\n     * within this market contract\n     * 3. any additional validation to ensure that\n     * a PartyBid can bid on this auction\n     * (ex: if the market allows arbitrary bidding currencies,\n     * check that the auction currency is ETH)\n     * Note: This function probably should have been named \"isValidAuction\"\n     * @dev Called in PartyBid.sol in `initialize` at line 174\n     * @return TRUE if the auction is valid\n     */\n    function auctionIdMatchesToken(\n        uint256 auctionId,\n        address nftContract,\n        uint256 tokenId\n    ) external view returns (bool);\n\n    /**\n     * @notice Calculate the minimum next bid for this auction.\n     * PartyBid contracts always submit the minimum possible\n     * bid that will be accepted by the Market contract.\n     * usually, this is either the reserve price (if there are no bids)\n     * or a certain percentage increase above the current highest bid\n     * @dev Called in PartyBid.sol in `bid` at line 251\n     * @return minimum bid amount\n     */\n    function getMinimumBid(uint256 auctionId) external view returns (uint256);\n\n    /**\n     * @notice Query the current highest bidder for this auction\n     * It is assumed that there is always 1 winning highest bidder for an auction\n     * This is used to ensure that PartyBid cannot outbid itself if it is already winning\n     * @dev Called in PartyBid.sol in `bid` at line 241\n     * @return highest bidder\n     */\n    function getCurrentHighestBidder(uint256 auctionId)\n        external\n        view\n        returns (address);\n\n    /**\n     * @notice Submit bid to Market contract\n     * @dev Called in PartyBid.sol in `bid` at line 259\n     */\n    function bid(uint256 auctionId, uint256 bidAmount) external;\n\n    /**\n     * @notice Determine whether the auction has been finalized\n     * Used to check if it is still possible to bid\n     * And to determine whether the PartyBid should finalize the auction\n     * @dev Called in PartyBid.sol in `bid` at line 247\n     * @dev and in `finalize` at line 288\n     * @return TRUE if the auction has been finalized\n     */\n    function isFinalized(uint256 auctionId) external view returns (bool);\n\n    /**\n     * @notice Finalize the results of the auction\n     * on the Market contract\n     * It is assumed  that this operation is performed once for each auction,\n     * that after it is done the auction is over and the NFT has been\n     * transferred to the auction winner.\n     * @dev Called in PartyBid.sol in `finalize` at line 289\n     */\n    function finalize(uint256 auctionId) external;\n}",
-  "sourcePath": "@rarible/auction/contracts/wrapper/IMarketWrapper.sol",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.7.6;\r\n\r\n/**\r\n * @title IMarketWrapper\r\n * @author Anna Carroll\r\n * @notice IMarketWrapper provides a common interface for\r\n * interacting with NFT auction markets.\r\n * Contracts can abstract their interactions with\r\n * different NFT markets using IMarketWrapper.\r\n * NFT markets can become compatible with any contract\r\n * using IMarketWrapper by deploying a MarketWrapper contract\r\n * that implements this interface using the logic of their Market.\r\n *\r\n * WARNING: MarketWrapper contracts should NEVER write to storage!\r\n * When implementing a MarketWrapper, exercise caution; a poorly implemented\r\n * MarketWrapper contract could permanently lose access to the NFT or user funds.\r\n */\r\ninterface IMarketWrapper {\r\n    /**\r\n     * @notice Given the auctionId, nftContract, and tokenId, check that:\r\n     * 1. the auction ID matches the token\r\n     * referred to by tokenId + nftContract\r\n     * 2. the auctionId refers to an *ACTIVE* auction\r\n     * (e.g. an auction that will accept bids)\r\n     * within this market contract\r\n     * 3. any additional validation to ensure that\r\n     * a PartyBid can bid on this auction\r\n     * (ex: if the market allows arbitrary bidding currencies,\r\n     * check that the auction currency is ETH)\r\n     * Note: This function probably should have been named \"isValidAuction\"\r\n     * @dev Called in PartyBid.sol in `initialize` at line 174\r\n     * @return TRUE if the auction is valid\r\n     */\r\n    function auctionIdMatchesToken(\r\n        uint256 auctionId,\r\n        address nftContract,\r\n        uint256 tokenId\r\n    ) external view returns (bool);\r\n\r\n    /**\r\n     * @notice Calculate the minimum next bid for this auction.\r\n     * PartyBid contracts always submit the minimum possible\r\n     * bid that will be accepted by the Market contract.\r\n     * usually, this is either the reserve price (if there are no bids)\r\n     * or a certain percentage increase above the current highest bid\r\n     * @dev Called in PartyBid.sol in `bid` at line 251\r\n     * @return minimum bid amount\r\n     */\r\n    function getMinimumBid(uint256 auctionId) external view returns (uint256);\r\n\r\n    /**\r\n     * @notice Query the current highest bidder for this auction\r\n     * It is assumed that there is always 1 winning highest bidder for an auction\r\n     * This is used to ensure that PartyBid cannot outbid itself if it is already winning\r\n     * @dev Called in PartyBid.sol in `bid` at line 241\r\n     * @return highest bidder\r\n     */\r\n    function getCurrentHighestBidder(uint256 auctionId)\r\n        external\r\n        view\r\n        returns (address);\r\n\r\n    /**\r\n     * @notice Submit bid to Market contract\r\n     * @dev Called in PartyBid.sol in `bid` at line 259\r\n     */\r\n    function bid(uint256 auctionId, uint256 bidAmount) external;\r\n\r\n    /**\r\n     * @notice Determine whether the auction has been finalized\r\n     * Used to check if it is still possible to bid\r\n     * And to determine whether the PartyBid should finalize the auction\r\n     * @dev Called in PartyBid.sol in `bid` at line 247\r\n     * @dev and in `finalize` at line 288\r\n     * @return TRUE if the auction has been finalized\r\n     */\r\n    function isFinalized(uint256 auctionId) external view returns (bool);\r\n\r\n    /**\r\n     * @notice Finalize the results of the auction\r\n     * on the Market contract\r\n     * It is assumed  that this operation is performed once for each auction,\r\n     * that after it is done the auction is over and the NFT has been\r\n     * transferred to the auction winner.\r\n     * @dev Called in PartyBid.sol in `finalize` at line 289\r\n     */\r\n    function finalize(uint256 auctionId) external;\r\n}",
+  "sourcePath": "@rarible\\auction\\contracts\\wrapper\\IMarketWrapper.sol",
   "ast": {
     "absolutePath": "@rarible/auction/contracts/wrapper/IMarketWrapper.sol",
     "exportedSymbols": {
@@ -148,7 +148,7 @@
           ".6"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:22:40"
+        "src": "33:22:40"
       },
       {
         "abstract": false,
@@ -158,7 +158,7 @@
         "documentation": {
           "id": 7100,
           "nodeType": "StructuredDocumentation",
-          "src": "56:665:40",
+          "src": "59:679:40",
           "text": " @title IMarketWrapper\n @author Anna Carroll\n @notice IMarketWrapper provides a common interface for\n interacting with NFT auction markets.\n Contracts can abstract their interactions with\n different NFT markets using IMarketWrapper.\n NFT markets can become compatible with any contract\n using IMarketWrapper by deploying a MarketWrapper contract\n that implements this interface using the logic of their Market.\n WARNING: MarketWrapper contracts should NEVER write to storage!\n When implementing a MarketWrapper, exercise caution; a poorly implemented\n MarketWrapper contract could permanently lose access to the NFT or user funds."
         },
         "fullyImplemented": false,
@@ -173,7 +173,7 @@
             "documentation": {
               "id": 7101,
               "nodeType": "StructuredDocumentation",
-              "src": "753:694:40",
+              "src": "772:708:40",
               "text": " @notice Given the auctionId, nftContract, and tokenId, check that:\n 1. the auction ID matches the token\n referred to by tokenId + nftContract\n 2. the auctionId refers to an *ACTIVE* auction\n (e.g. an auction that will accept bids)\n within this market contract\n 3. any additional validation to ensure that\n a PartyBid can bid on this auction\n (ex: if the market allows arbitrary bidding currencies,\n check that the auction currency is ETH)\n Note: This function probably should have been named \"isValidAuction\"\n @dev Called in PartyBid.sol in `initialize` at line 174\n @return TRUE if the auction is valid"
             },
             "functionSelector": "97e2d380",
@@ -194,7 +194,7 @@
                   "name": "auctionId",
                   "nodeType": "VariableDeclaration",
                   "scope": 7112,
-                  "src": "1492:17:40",
+                  "src": "1527:17:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -205,7 +205,7 @@
                     "id": 7102,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1492:7:40",
+                    "src": "1527:7:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -220,7 +220,7 @@
                   "name": "nftContract",
                   "nodeType": "VariableDeclaration",
                   "scope": 7112,
-                  "src": "1519:19:40",
+                  "src": "1555:19:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -231,7 +231,7 @@
                     "id": 7104,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1519:7:40",
+                    "src": "1555:7:40",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -247,7 +247,7 @@
                   "name": "tokenId",
                   "nodeType": "VariableDeclaration",
                   "scope": 7112,
-                  "src": "1548:15:40",
+                  "src": "1585:15:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -258,7 +258,7 @@
                     "id": 7106,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1548:7:40",
+                    "src": "1585:7:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -267,7 +267,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1482:87:40"
+              "src": "1516:91:40"
             },
             "returnParameters": {
               "id": 7111,
@@ -280,7 +280,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 7112,
-                  "src": "1593:4:40",
+                  "src": "1631:4:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -291,7 +291,7 @@
                     "id": 7109,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1593:4:40",
+                    "src": "1631:4:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -300,10 +300,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1592:6:40"
+              "src": "1630:6:40"
             },
             "scope": 7151,
-            "src": "1452:147:40",
+            "src": "1486:151:40",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -312,7 +312,7 @@
             "documentation": {
               "id": 7113,
               "nodeType": "StructuredDocumentation",
-              "src": "1605:425:40",
+              "src": "1645:433:40",
               "text": " @notice Calculate the minimum next bid for this auction.\n PartyBid contracts always submit the minimum possible\n bid that will be accepted by the Market contract.\n usually, this is either the reserve price (if there are no bids)\n or a certain percentage increase above the current highest bid\n @dev Called in PartyBid.sol in `bid` at line 251\n @return minimum bid amount"
             },
             "functionSelector": "0600d4eb",
@@ -333,7 +333,7 @@
                   "name": "auctionId",
                   "nodeType": "VariableDeclaration",
                   "scope": 7120,
-                  "src": "2058:17:40",
+                  "src": "2107:17:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -344,7 +344,7 @@
                     "id": 7114,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2058:7:40",
+                    "src": "2107:7:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -353,7 +353,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2057:19:40"
+              "src": "2106:19:40"
             },
             "returnParameters": {
               "id": 7119,
@@ -366,7 +366,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 7120,
-                  "src": "2100:7:40",
+                  "src": "2149:7:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -377,7 +377,7 @@
                     "id": 7117,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2100:7:40",
+                    "src": "2149:7:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -386,10 +386,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2099:9:40"
+              "src": "2148:9:40"
             },
             "scope": 7151,
-            "src": "2035:74:40",
+            "src": "2084:74:40",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -398,7 +398,7 @@
             "documentation": {
               "id": 7121,
               "nodeType": "StructuredDocumentation",
-              "src": "2115:334:40",
+              "src": "2166:340:40",
               "text": " @notice Query the current highest bidder for this auction\n It is assumed that there is always 1 winning highest bidder for an auction\n This is used to ensure that PartyBid cannot outbid itself if it is already winning\n @dev Called in PartyBid.sol in `bid` at line 241\n @return highest bidder"
             },
             "functionSelector": "456b09c1",
@@ -419,7 +419,7 @@
                   "name": "auctionId",
                   "nodeType": "VariableDeclaration",
                   "scope": 7128,
-                  "src": "2487:17:40",
+                  "src": "2545:17:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -430,7 +430,7 @@
                     "id": 7122,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2487:7:40",
+                    "src": "2545:7:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -439,7 +439,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2486:19:40"
+              "src": "2544:19:40"
             },
             "returnParameters": {
               "id": 7127,
@@ -452,7 +452,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 7128,
-                  "src": "2553:7:40",
+                  "src": "2614:7:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -463,7 +463,7 @@
                     "id": 7125,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2553:7:40",
+                    "src": "2614:7:40",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -473,10 +473,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2552:9:40"
+              "src": "2613:9:40"
             },
             "scope": 7151,
-            "src": "2454:108:40",
+            "src": "2512:111:40",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -485,7 +485,7 @@
             "documentation": {
               "id": 7129,
               "nodeType": "StructuredDocumentation",
-              "src": "2568:112:40",
+              "src": "2631:115:40",
               "text": " @notice Submit bid to Market contract\n @dev Called in PartyBid.sol in `bid` at line 259"
             },
             "functionSelector": "598647f8",
@@ -506,7 +506,7 @@
                   "name": "auctionId",
                   "nodeType": "VariableDeclaration",
                   "scope": 7136,
-                  "src": "2698:17:40",
+                  "src": "2765:17:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -517,7 +517,7 @@
                     "id": 7130,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2698:7:40",
+                    "src": "2765:7:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -532,7 +532,7 @@
                   "name": "bidAmount",
                   "nodeType": "VariableDeclaration",
                   "scope": 7136,
-                  "src": "2717:17:40",
+                  "src": "2784:17:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -543,7 +543,7 @@
                     "id": 7132,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2717:7:40",
+                    "src": "2784:7:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -552,16 +552,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2697:38:40"
+              "src": "2764:38:40"
             },
             "returnParameters": {
               "id": 7135,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2744:0:40"
+              "src": "2811:0:40"
             },
             "scope": 7151,
-            "src": "2685:60:40",
+            "src": "2752:60:40",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
@@ -570,7 +570,7 @@
             "documentation": {
               "id": 7137,
               "nodeType": "StructuredDocumentation",
-              "src": "2751:352:40",
+              "src": "2820:359:40",
               "text": " @notice Determine whether the auction has been finalized\n Used to check if it is still possible to bid\n And to determine whether the PartyBid should finalize the auction\n @dev Called in PartyBid.sol in `bid` at line 247\n @dev and in `finalize` at line 288\n @return TRUE if the auction has been finalized"
             },
             "functionSelector": "33727c4d",
@@ -591,7 +591,7 @@
                   "name": "auctionId",
                   "nodeType": "VariableDeclaration",
                   "scope": 7144,
-                  "src": "3129:17:40",
+                  "src": "3206:17:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -602,7 +602,7 @@
                     "id": 7138,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3129:7:40",
+                    "src": "3206:7:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -611,7 +611,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3128:19:40"
+              "src": "3205:19:40"
             },
             "returnParameters": {
               "id": 7143,
@@ -624,7 +624,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 7144,
-                  "src": "3171:4:40",
+                  "src": "3248:4:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -635,7 +635,7 @@
                     "id": 7141,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3171:4:40",
+                    "src": "3248:4:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -644,10 +644,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3170:6:40"
+              "src": "3247:6:40"
             },
             "scope": 7151,
-            "src": "3108:69:40",
+            "src": "3185:69:40",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -656,7 +656,7 @@
             "documentation": {
               "id": 7145,
               "nodeType": "StructuredDocumentation",
-              "src": "3183:343:40",
+              "src": "3262:350:40",
               "text": " @notice Finalize the results of the auction\n on the Market contract\n It is assumed  that this operation is performed once for each auction,\n that after it is done the auction is over and the NFT has been\n transferred to the auction winner.\n @dev Called in PartyBid.sol in `finalize` at line 289"
             },
             "functionSelector": "05261aea",
@@ -677,7 +677,7 @@
                   "name": "auctionId",
                   "nodeType": "VariableDeclaration",
                   "scope": 7150,
-                  "src": "3549:17:40",
+                  "src": "3636:17:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -688,7 +688,7 @@
                     "id": 7146,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "3549:7:40",
+                    "src": "3636:7:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -697,26 +697,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3548:19:40"
+              "src": "3635:19:40"
             },
             "returnParameters": {
               "id": 7149,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "3576:0:40"
+              "src": "3663:0:40"
             },
             "scope": 7151,
-            "src": "3531:46:40",
+            "src": "3618:46:40",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
         "scope": 7152,
-        "src": "722:2857:40"
+        "src": "740:2927:40"
       }
     ],
-    "src": "32:3547:40"
+    "src": "33:3634:40"
   },
   "legacyAST": {
     "attributes": {
@@ -739,7 +739,7 @@
         },
         "id": 7099,
         "name": "PragmaDirective",
-        "src": "32:22:40"
+        "src": "33:22:40"
       },
       {
         "attributes": {
@@ -765,7 +765,7 @@
             },
             "id": 7100,
             "name": "StructuredDocumentation",
-            "src": "56:665:40"
+            "src": "59:679:40"
           },
           {
             "attributes": {
@@ -789,7 +789,7 @@
                 },
                 "id": 7101,
                 "name": "StructuredDocumentation",
-                "src": "753:694:40"
+                "src": "772:708:40"
               },
               {
                 "children": [
@@ -812,12 +812,12 @@
                         },
                         "id": 7102,
                         "name": "ElementaryTypeName",
-                        "src": "1492:7:40"
+                        "src": "1527:7:40"
                       }
                     ],
                     "id": 7103,
                     "name": "VariableDeclaration",
-                    "src": "1492:17:40"
+                    "src": "1527:17:40"
                   },
                   {
                     "attributes": {
@@ -839,12 +839,12 @@
                         },
                         "id": 7104,
                         "name": "ElementaryTypeName",
-                        "src": "1519:7:40"
+                        "src": "1555:7:40"
                       }
                     ],
                     "id": 7105,
                     "name": "VariableDeclaration",
-                    "src": "1519:19:40"
+                    "src": "1555:19:40"
                   },
                   {
                     "attributes": {
@@ -865,17 +865,17 @@
                         },
                         "id": 7106,
                         "name": "ElementaryTypeName",
-                        "src": "1548:7:40"
+                        "src": "1585:7:40"
                       }
                     ],
                     "id": 7107,
                     "name": "VariableDeclaration",
-                    "src": "1548:15:40"
+                    "src": "1585:15:40"
                   }
                 ],
                 "id": 7108,
                 "name": "ParameterList",
-                "src": "1482:87:40"
+                "src": "1516:91:40"
               },
               {
                 "children": [
@@ -898,22 +898,22 @@
                         },
                         "id": 7109,
                         "name": "ElementaryTypeName",
-                        "src": "1593:4:40"
+                        "src": "1631:4:40"
                       }
                     ],
                     "id": 7110,
                     "name": "VariableDeclaration",
-                    "src": "1593:4:40"
+                    "src": "1631:4:40"
                   }
                 ],
                 "id": 7111,
                 "name": "ParameterList",
-                "src": "1592:6:40"
+                "src": "1630:6:40"
               }
             ],
             "id": 7112,
             "name": "FunctionDefinition",
-            "src": "1452:147:40"
+            "src": "1486:151:40"
           },
           {
             "attributes": {
@@ -937,7 +937,7 @@
                 },
                 "id": 7113,
                 "name": "StructuredDocumentation",
-                "src": "1605:425:40"
+                "src": "1645:433:40"
               },
               {
                 "children": [
@@ -960,17 +960,17 @@
                         },
                         "id": 7114,
                         "name": "ElementaryTypeName",
-                        "src": "2058:7:40"
+                        "src": "2107:7:40"
                       }
                     ],
                     "id": 7115,
                     "name": "VariableDeclaration",
-                    "src": "2058:17:40"
+                    "src": "2107:17:40"
                   }
                 ],
                 "id": 7116,
                 "name": "ParameterList",
-                "src": "2057:19:40"
+                "src": "2106:19:40"
               },
               {
                 "children": [
@@ -993,22 +993,22 @@
                         },
                         "id": 7117,
                         "name": "ElementaryTypeName",
-                        "src": "2100:7:40"
+                        "src": "2149:7:40"
                       }
                     ],
                     "id": 7118,
                     "name": "VariableDeclaration",
-                    "src": "2100:7:40"
+                    "src": "2149:7:40"
                   }
                 ],
                 "id": 7119,
                 "name": "ParameterList",
-                "src": "2099:9:40"
+                "src": "2148:9:40"
               }
             ],
             "id": 7120,
             "name": "FunctionDefinition",
-            "src": "2035:74:40"
+            "src": "2084:74:40"
           },
           {
             "attributes": {
@@ -1032,7 +1032,7 @@
                 },
                 "id": 7121,
                 "name": "StructuredDocumentation",
-                "src": "2115:334:40"
+                "src": "2166:340:40"
               },
               {
                 "children": [
@@ -1055,17 +1055,17 @@
                         },
                         "id": 7122,
                         "name": "ElementaryTypeName",
-                        "src": "2487:7:40"
+                        "src": "2545:7:40"
                       }
                     ],
                     "id": 7123,
                     "name": "VariableDeclaration",
-                    "src": "2487:17:40"
+                    "src": "2545:17:40"
                   }
                 ],
                 "id": 7124,
                 "name": "ParameterList",
-                "src": "2486:19:40"
+                "src": "2544:19:40"
               },
               {
                 "children": [
@@ -1089,22 +1089,22 @@
                         },
                         "id": 7125,
                         "name": "ElementaryTypeName",
-                        "src": "2553:7:40"
+                        "src": "2614:7:40"
                       }
                     ],
                     "id": 7126,
                     "name": "VariableDeclaration",
-                    "src": "2553:7:40"
+                    "src": "2614:7:40"
                   }
                 ],
                 "id": 7127,
                 "name": "ParameterList",
-                "src": "2552:9:40"
+                "src": "2613:9:40"
               }
             ],
             "id": 7128,
             "name": "FunctionDefinition",
-            "src": "2454:108:40"
+            "src": "2512:111:40"
           },
           {
             "attributes": {
@@ -1128,7 +1128,7 @@
                 },
                 "id": 7129,
                 "name": "StructuredDocumentation",
-                "src": "2568:112:40"
+                "src": "2631:115:40"
               },
               {
                 "children": [
@@ -1151,12 +1151,12 @@
                         },
                         "id": 7130,
                         "name": "ElementaryTypeName",
-                        "src": "2698:7:40"
+                        "src": "2765:7:40"
                       }
                     ],
                     "id": 7131,
                     "name": "VariableDeclaration",
-                    "src": "2698:17:40"
+                    "src": "2765:17:40"
                   },
                   {
                     "attributes": {
@@ -1177,17 +1177,17 @@
                         },
                         "id": 7132,
                         "name": "ElementaryTypeName",
-                        "src": "2717:7:40"
+                        "src": "2784:7:40"
                       }
                     ],
                     "id": 7133,
                     "name": "VariableDeclaration",
-                    "src": "2717:17:40"
+                    "src": "2784:17:40"
                   }
                 ],
                 "id": 7134,
                 "name": "ParameterList",
-                "src": "2697:38:40"
+                "src": "2764:38:40"
               },
               {
                 "attributes": {
@@ -1198,12 +1198,12 @@
                 "children": [],
                 "id": 7135,
                 "name": "ParameterList",
-                "src": "2744:0:40"
+                "src": "2811:0:40"
               }
             ],
             "id": 7136,
             "name": "FunctionDefinition",
-            "src": "2685:60:40"
+            "src": "2752:60:40"
           },
           {
             "attributes": {
@@ -1227,7 +1227,7 @@
                 },
                 "id": 7137,
                 "name": "StructuredDocumentation",
-                "src": "2751:352:40"
+                "src": "2820:359:40"
               },
               {
                 "children": [
@@ -1250,17 +1250,17 @@
                         },
                         "id": 7138,
                         "name": "ElementaryTypeName",
-                        "src": "3129:7:40"
+                        "src": "3206:7:40"
                       }
                     ],
                     "id": 7139,
                     "name": "VariableDeclaration",
-                    "src": "3129:17:40"
+                    "src": "3206:17:40"
                   }
                 ],
                 "id": 7140,
                 "name": "ParameterList",
-                "src": "3128:19:40"
+                "src": "3205:19:40"
               },
               {
                 "children": [
@@ -1283,22 +1283,22 @@
                         },
                         "id": 7141,
                         "name": "ElementaryTypeName",
-                        "src": "3171:4:40"
+                        "src": "3248:4:40"
                       }
                     ],
                     "id": 7142,
                     "name": "VariableDeclaration",
-                    "src": "3171:4:40"
+                    "src": "3248:4:40"
                   }
                 ],
                 "id": 7143,
                 "name": "ParameterList",
-                "src": "3170:6:40"
+                "src": "3247:6:40"
               }
             ],
             "id": 7144,
             "name": "FunctionDefinition",
-            "src": "3108:69:40"
+            "src": "3185:69:40"
           },
           {
             "attributes": {
@@ -1322,7 +1322,7 @@
                 },
                 "id": 7145,
                 "name": "StructuredDocumentation",
-                "src": "3183:343:40"
+                "src": "3262:350:40"
               },
               {
                 "children": [
@@ -1345,17 +1345,17 @@
                         },
                         "id": 7146,
                         "name": "ElementaryTypeName",
-                        "src": "3549:7:40"
+                        "src": "3636:7:40"
                       }
                     ],
                     "id": 7147,
                     "name": "VariableDeclaration",
-                    "src": "3549:17:40"
+                    "src": "3636:17:40"
                   }
                 ],
                 "id": 7148,
                 "name": "ParameterList",
-                "src": "3548:19:40"
+                "src": "3635:19:40"
               },
               {
                 "attributes": {
@@ -1366,30 +1366,30 @@
                 "children": [],
                 "id": 7149,
                 "name": "ParameterList",
-                "src": "3576:0:40"
+                "src": "3663:0:40"
               }
             ],
             "id": 7150,
             "name": "FunctionDefinition",
-            "src": "3531:46:40"
+            "src": "3618:46:40"
           }
         ],
         "id": 7151,
         "name": "ContractDefinition",
-        "src": "722:2857:40"
+        "src": "740:2927:40"
       }
     ],
     "id": 7152,
     "name": "SourceUnit",
-    "src": "32:3547:40"
+    "src": "33:3634:40"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.5",
-  "updatedAt": "2022-07-27T15:42:38.026Z",
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-08-05T17:11:10.520Z",
   "devdoc": {
     "author": "Anna Carroll",
     "kind": "dev",

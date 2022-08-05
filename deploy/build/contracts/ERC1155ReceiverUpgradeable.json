@@ -108,7 +108,7 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity >=0.6.0 <0.8.0;\n\nimport \"./IERC1155ReceiverUpgradeable.sol\";\nimport \"../../introspection/ERC165Upgradeable.sol\";\nimport \"../../proxy/Initializable.sol\";\n\n/**\n * @dev _Available since v3.1._\n */\nabstract contract ERC1155ReceiverUpgradeable is Initializable, ERC165Upgradeable, IERC1155ReceiverUpgradeable {\n    function __ERC1155Receiver_init() internal initializer {\n        __ERC165_init_unchained();\n        __ERC1155Receiver_init_unchained();\n    }\n\n    function __ERC1155Receiver_init_unchained() internal initializer {\n        _registerInterface(\n            ERC1155ReceiverUpgradeable(address(0)).onERC1155Received.selector ^\n            ERC1155ReceiverUpgradeable(address(0)).onERC1155BatchReceived.selector\n        );\n    }\n    uint256[50] private __gap;\n}\n",
-  "sourcePath": "@openzeppelin/contracts-upgradeable/token/ERC1155/ERC1155ReceiverUpgradeable.sol",
+  "sourcePath": "@openzeppelin\\contracts-upgradeable\\token\\ERC1155\\ERC1155ReceiverUpgradeable.sol",
   "ast": {
     "absolutePath": "@openzeppelin/contracts-upgradeable/token/ERC1155/ERC1155ReceiverUpgradeable.sol",
     "exportedSymbols": {
@@ -1590,8 +1590,8 @@
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.5",
-  "updatedAt": "2022-07-27T15:42:37.900Z",
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-08-05T17:11:10.365Z",
   "devdoc": {
     "details": "_Available since v3.1._",
     "kind": "dev",

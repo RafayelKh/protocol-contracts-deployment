@@ -1,36 +1,36 @@
 {
   "contractName": "IsPrivateCollection",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"stateVariables\":{\"isPrivate\":{\"details\":\"true if collection is private, false if public\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/tokens/contracts/IsPrivateCollection.sol\":\"IsPrivateCollection\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@rarible/tokens/contracts/IsPrivateCollection.sol\":{\"keccak256\":\"0x004f0cedb717192188cc264bc6b81f9c42f41b197dc92a17e1ddfb933982b583\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3e3612ce808ae3086c18fb52b9885c2bad5d1133a7ea8bbca4f646edeb47dc9f\",\"dweb:/ipfs/QmTLR4kgFrg5pZ4zn8GpxFpS54jvVFmqpt5jX6PotLUtzZ\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220a68fe597107a1312d72eefb476a782ff129c1f3687b0b21c3ecb1e209fe1a85664736f6c63430007060033",
-  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220a68fe597107a1312d72eefb476a782ff129c1f3687b0b21c3ecb1e209fe1a85664736f6c63430007060033",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"stateVariables\":{\"isPrivate\":{\"details\":\"true if collection is private, false if public\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"@rarible/tokens/contracts/IsPrivateCollection.sol\":\"IsPrivateCollection\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@rarible/tokens/contracts/IsPrivateCollection.sol\":{\"keccak256\":\"0xa81a35f1f199299f1883af53512cd92240aa1a9eaa6c72d6038f12f3cd7b2e1f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ea5585a7c0ae5d4cc606aa4bccb3d52166ea79a967658ee6368564a1d3627c44\",\"dweb:/ipfs/QmZsz6APBGN5jCkVtLVcXGL9HDVGsiD8hLWF3yahrzP6Eb\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220a2dec94a768e815210f000a3cceadc25641e181503be415aafee0af9f14e2f5b64736f6c63430007060033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220a2dec94a768e815210f000a3cceadc25641e181503be415aafee0af9f14e2f5b64736f6c63430007060033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
-  "sourceMap": "57:144:93:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "57:144:93:-:0;;;;;",
-  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity 0.7.6;\n\ncontract IsPrivateCollection {\n    /// @dev true if collection is private, false if public\n    bool isPrivate;\n\n    uint256[49] private __gap;\n}",
-  "sourcePath": "@rarible/tokens/contracts/IsPrivateCollection.sol",
+  "sourceMap": "61:149:93:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "61:149:93:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity 0.7.6;\r\n\r\ncontract IsPrivateCollection {\r\n    /// @dev true if collection is private, false if public\r\n    bool isPrivate;\r\n\r\n    uint256[49] private __gap;\r\n}",
+  "sourcePath": "@rarible\\tokens\\contracts\\IsPrivateCollection.sol",
   "ast": {
     "absolutePath": "@rarible/tokens/contracts/IsPrivateCollection.sol",
     "exportedSymbols": {
       "IsPrivateCollection": [
-        13957
+        13949
       ]
     },
-    "id": 13958,
+    "id": 13950,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 13949,
+        "id": 13941,
         "literals": [
           "solidity",
           "0.7",
           ".6"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:22:93"
+        "src": "35:22:93"
       },
       {
         "abstract": false,
@@ -38,9 +38,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 13957,
+        "id": 13949,
         "linearizedBaseContracts": [
-          13957
+          13949
         ],
         "name": "IsPrivateCollection",
         "nodeType": "ContractDefinition",
@@ -48,17 +48,17 @@
           {
             "constant": false,
             "documentation": {
-              "id": 13950,
+              "id": 13942,
               "nodeType": "StructuredDocumentation",
-              "src": "92:55:93",
+              "src": "97:55:93",
               "text": "@dev true if collection is private, false if public"
             },
-            "id": 13952,
+            "id": 13944,
             "mutability": "mutable",
             "name": "isPrivate",
             "nodeType": "VariableDeclaration",
-            "scope": 13957,
-            "src": "152:14:93",
+            "scope": 13949,
+            "src": "158:14:93",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -66,10 +66,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 13951,
+              "id": 13943,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "152:4:93",
+              "src": "158:4:93",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -79,12 +79,12 @@
           },
           {
             "constant": false,
-            "id": 13956,
+            "id": 13948,
             "mutability": "mutable",
             "name": "__gap",
             "nodeType": "VariableDeclaration",
-            "scope": 13957,
-            "src": "173:25:93",
+            "scope": 13949,
+            "src": "181:25:93",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -93,26 +93,26 @@
             },
             "typeName": {
               "baseType": {
-                "id": 13953,
+                "id": 13945,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
-                "src": "173:7:93",
+                "src": "181:7:93",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint256",
                   "typeString": "uint256"
                 }
               },
-              "id": 13955,
+              "id": 13947,
               "length": {
                 "hexValue": "3439",
-                "id": 13954,
+                "id": 13946,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "181:2:93",
+                "src": "189:2:93",
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_49_by_1",
                   "typeString": "int_const 49"
@@ -120,7 +120,7 @@
                 "value": "49"
               },
               "nodeType": "ArrayTypeName",
-              "src": "173:11:93",
+              "src": "181:11:93",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_uint256_$49_storage_ptr",
                 "typeString": "uint256[49]"
@@ -129,18 +129,18 @@
             "visibility": "private"
           }
         ],
-        "scope": 13958,
-        "src": "57:144:93"
+        "scope": 13950,
+        "src": "61:149:93"
       }
     ],
-    "src": "33:168:93"
+    "src": "35:175:93"
   },
   "legacyAST": {
     "attributes": {
       "absolutePath": "@rarible/tokens/contracts/IsPrivateCollection.sol",
       "exportedSymbols": {
         "IsPrivateCollection": [
-          13957
+          13949
         ]
       },
       "license": "MIT"
@@ -154,9 +154,9 @@
             ".6"
           ]
         },
-        "id": 13949,
+        "id": 13941,
         "name": "PragmaDirective",
-        "src": "33:22:93"
+        "src": "35:22:93"
       },
       {
         "attributes": {
@@ -170,10 +170,10 @@
           "contractKind": "contract",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            13957
+            13949
           ],
           "name": "IsPrivateCollection",
-          "scope": 13958
+          "scope": 13950
         },
         "children": [
           {
@@ -181,7 +181,7 @@
               "constant": false,
               "mutability": "mutable",
               "name": "isPrivate",
-              "scope": 13957,
+              "scope": 13949,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "bool",
@@ -193,29 +193,29 @@
                   "name": "bool",
                   "type": "bool"
                 },
-                "id": 13951,
+                "id": 13943,
                 "name": "ElementaryTypeName",
-                "src": "152:4:93"
+                "src": "158:4:93"
               },
               {
                 "attributes": {
                   "text": "@dev true if collection is private, false if public"
                 },
-                "id": 13950,
+                "id": 13942,
                 "name": "StructuredDocumentation",
-                "src": "92:55:93"
+                "src": "97:55:93"
               }
             ],
-            "id": 13952,
+            "id": 13944,
             "name": "VariableDeclaration",
-            "src": "152:14:93"
+            "src": "158:14:93"
           },
           {
             "attributes": {
               "constant": false,
               "mutability": "mutable",
               "name": "__gap",
-              "scope": 13957,
+              "scope": 13949,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256[49]",
@@ -232,9 +232,9 @@
                       "name": "uint256",
                       "type": "uint256"
                     },
-                    "id": 13953,
+                    "id": 13945,
                     "name": "ElementaryTypeName",
-                    "src": "173:7:93"
+                    "src": "181:7:93"
                   },
                   {
                     "attributes": {
@@ -247,37 +247,37 @@
                       "type": "int_const 49",
                       "value": "49"
                     },
-                    "id": 13954,
+                    "id": 13946,
                     "name": "Literal",
-                    "src": "181:2:93"
+                    "src": "189:2:93"
                   }
                 ],
-                "id": 13955,
+                "id": 13947,
                 "name": "ArrayTypeName",
-                "src": "173:11:93"
+                "src": "181:11:93"
               }
             ],
-            "id": 13956,
+            "id": 13948,
             "name": "VariableDeclaration",
-            "src": "173:25:93"
+            "src": "181:25:93"
           }
         ],
-        "id": 13957,
+        "id": 13949,
         "name": "ContractDefinition",
-        "src": "57:144:93"
+        "src": "61:149:93"
       }
     ],
-    "id": 13958,
+    "id": 13950,
     "name": "SourceUnit",
-    "src": "33:168:93"
+    "src": "35:175:93"
   },
   "compiler": {
     "name": "solc",
     "version": "0.7.6+commit.7338295f.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.5",
-  "updatedAt": "2022-07-27T15:42:38.158Z",
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-08-05T17:11:10.706Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
